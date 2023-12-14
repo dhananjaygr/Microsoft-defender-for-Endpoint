@@ -14,7 +14,6 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
-  ![Picture 1](../media/part1lab02.png)
 
 ### Task 3: Onboard a Device
 
