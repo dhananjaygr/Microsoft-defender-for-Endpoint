@@ -1,67 +1,65 @@
-# Lab 2 - Onboard Machines
+## Part:1 Lab 02 - Deploy Microsoft Defender for Endpoint
 
 ## Lab scenario
 
+You are a Security Operations Analyst working at a company that is implementing Microsoft Defender for Endpoint. Your manager plans to onboard a few devices to provide insight into required changes to the Security Operations (SecOps) team response procedures.
 
+You start by initializing the Defender for the Endpoint environment. Next, you onboard the initial devices for your deployment by running the onboarding script on the devices. You configure security for the environment. Lastly, you create Device groups and assign the appropriate devices.
 
-### Task 1: Onboard Microsoft Defender for Endpoint Device
+>**Important:**  The lab Virtual Machines are used through different modules. SAVE your virtual machines. If you exit the lab without saving, you will be required to re-run some configurations again.
 
-In this task, you will on-board a device to Microsoft Defender for Endpoint.
+## Lab objectives (Duration: 10 minutes)
+In this lab, you will perform the following:
+- Task 3: Onboard a Device
 
->**VERY IMPORTANT:** If you completed the labs for "Module 2 - Exercise 1" of this course AND have been saving your Virtual Machines until now, you can skip this task. Otherwise, you need to onboard again the **WIN1** machine to Defender for Endpoint.
+## Architecture Diagram
 
->**Important:** The next steps are done in a different machine than the one you were previously working. Look for the Virtual Machine name references.
+  ![Picture 1](../media/part1lab02.png)
 
-1. Login to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+### Task 3: Onboard a Device
 
-1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com) and login with the **Tenant Email** credentials if you are not currently in the portal.
+In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
+
+1. If you are not already at the Microsoft Defender portal in your browser, start the Microsoft Edge browser go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
 
 1. Select **Settings** from the left menu bar, then from the Settings page select **Endpoints**.
 
-1. Select **Onboarding** in the Device management section.
+1. Select **Onboarding** in the Device Management section.
 
-1. Select **Download onboarding package**.
+    >**Note:** You can also perform device onboarding from the **Assets** section of the left menu bar. Expand Assets and select Devices. On the Device Inventory page, with Computers & Mobile selected, scroll down to **Onboard devices.** This takes you to the **Settings > Endpoints** page.
 
-1. Extract the downloaded .zip file.
+1. In the "1. Onboard a device" area make sure "Local Script (for up to 10 devices)" is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
 
-1. Run the Windows Command Prompt as **Administrator** and agree to any User Account Control prompts that appear.
+1. Under the *Downloads* pop-up, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
 
-1. Run the WindowsDefenderATPLocalOnboardingScript.cmd file that you just extracted as administrator. **Note:** By default the file should be in the c:\users\admin\downloads directory. Answer Y to questions presented by the script. 
+1. Right-click the downloaded zip file and select **Extract All...**, make sure that **Show extracted files when complete** is checked and select **Extract**.
 
-1. From the Onboarding page in the portal, copy the detection test script and run it in an open command window. You may have to open a new **Administrator: Command Prompt** window by typing *CMD* in the windows search bar and choose to **Run as Administrator**.
+1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" and select **Properties**. Select the **Unblock** checkbox in the bottom right of the Properties windows and select **OK**.
 
-1. In the Microsoft 365 Defender portal in the Endpoints area, select **Device inventory**. You should now see your device in the list.
+    ![Picture 1](../media/sc200-mod2-unblock.png)
 
-or 
+1. Right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** again and choose **Run as Administrator**.  **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
+    
+1. When the "User Account Control" window is shown, select **Yes** to allow the script to run and answer **Y** to the question presented by the script and press **Enter**. When complete you should see a message in the command screen that says *Successfully onboarded machine to Microsoft Defender for Endpoint*.
 
-1. Go to the Microsoft Defender portal (https://security.microsoft.com), and sign in.
+1. Press any key to continue. This will close the Command Prompt window.
 
-1. In the navigation pane, choose Settings > Endpoints, and then under Device management, choose Onboarding.
+    ![Picture 1](../media/SC-200-img25.png)
 
-1. Select Windows 10 and 11, and then, in the Deployment method section, choose Local script.
+1. Back in the Onboarding page from the Microsoft Defender portal, under the section "2. Run a detection test", copy the detection test script by selecting the **Copy** button.  
 
-1. Select Download onboarding package. We recommend that you save the onboarding package to a removable drive.
+1. In the windows search bar of the virtual machine, type **CMD** and choose **Run as Administrator** on the right pane for the Command Prompt app. 
 
-1. On a Windows device, extract the contents of the configuration package to a location, such as the Desktop folder. You should have a file named WindowsDefenderATPLocalOnboardingScript.cmd.
+1. When the "User Account Control" window is shown, select **Yes** to allow the app to run. 
 
-1. Open a command prompt as an administrator.
+1. Paste the script by right-clicking in the **Administrator: Command Prompt** windows and press **Enter** to run it. **Note:** The window closes automatically after running the script.
 
-1. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type %userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd, and then press the Enter key (or select OK).
+1. In the Microsoft Defender portal, in the left-hand menu, under the **Assets** area, select **Devices**. If the device is not shown, complete the next task and come back to check it back later. It can take up to 60 minutes for the first device to be displayed in the portal.
 
-1. After the script runs, Run a detection test.
+     ![Picture 1](../media/SC-200-img22.png)
 
-### Task 2: Run a detection test on a Windows 10 or 11 device
+    >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
 
-1. On the Windows device, create a folder: C:\test-MDATP-test.
-
-1. Open Command Prompt as an administrator.
-
-1. In the Command Prompt window, run the following PowerShell command:
-
-    ``` powershell
-    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
-    ```
-
-    >**Note:** After the command runs, the Command Prompt window closes automatically. If successful, the detection test is marked as completed, and a new alert appears in the Microsoft Defender portal (https://security.microsoft.com) for the newly onboarded device within about 10 minutes.
-
-## Proceed to Exercise 3
+## Review
+In this lab, you will perform the following:
+- Onboard a device
