@@ -91,7 +91,7 @@ Now that Holly has turned on MFA, she is ready to run Microsoft 365's Attack sim
 
 6. On the **Select Technique** page, select the **Credentials Harvest (1)** attack type if it's not already selected by default, and then select **Next (2)**.
 
-    ![Picture 1](../media/Microsoft-defender1.png)
+    ![Picture 1](../Media/Microsoft-defender1.png)
 
 7. In the **Simulation** wizard, the steps involved in the simulation are displayed in the left-hand pane. While you can manually create a phishing campaign, it is recommended that you take advantage of the available templates that will prefill most of the information for you. The key to a successful phishing attack is to create a very intriguing, real-world looking email, and the templates provide very creative solutions. <br/>
 
@@ -101,7 +101,7 @@ Now that Holly has turned on MFA, she is ready to run Microsoft 365's Attack sim
 
 8. Select **Next (3)**.
 
-    ![Picture 1](../media/Microsoft-defender2.png)
+    ![Picture 1](../Media/Microsoft-defender2.png)
 
 9. On the **Select payload and login page**, under **Global payloads** select any payload's checkbox of your choice in the list of payloads and then select the circle that appears to the left of it. Select **Next**. 
 
@@ -111,7 +111,7 @@ Now that Holly has turned on MFA, she is ready to run Microsoft 365's Attack sim
 
 11. On the **Assign Training** page, under the **Preferences** section, the **Assign training for me (Recommended) (1)** option should be selected by default (if not, select it now). Select the **Due Date** field. In the drop-down menu that appears, select **7 days after Simulation ends (2)** and then select **Next (3)**.
 
-    ![Picture 1](../media/assign-training.png)
+    ![Picture 1](../Media/assign-training.png)
 
 1. On **Phish Landing page** page, select **Use landing pages from library**, and under **Global landing pages** select any landing page template checkbox of your choice. Select **Next**.
 
@@ -122,7 +122,7 @@ Now that Holly has turned on MFA, she is ready to run Microsoft 365's Attack sim
     |**Microsoft default positive reinforcement notification**| **Deliver after simulation end (2)**|
     |**Microsoft default training reminder notification**| **Weekly (3)**|
 
-    ![Picture 1](../media/defaultnotification.png)
+    ![Picture 1](../Media/defaultnotification.png)
 
 1. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
