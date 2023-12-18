@@ -18,7 +18,7 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
-  ![Picture 1](../media/part1lab02.png)
+  ![Picture 1](../Media/part1lab02.png)
 
 ### Task 1: Initialize Microsoft Defender for Endpoint
 
@@ -36,7 +36,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 1. On the **Settings** page select **Device discovery**. 
 
-    ![Picture 1](../media/SC200-img1.png)
+    ![Picture 1](../Media/SC200-img1.png)
 
     >**Note:** If you do not see the **Device discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try are to refresh the page, wait for 20-25 minutes or open the page InPrivate. Login again with the **Tenant Email** credentials.
 
@@ -63,7 +63,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" and select **Properties**. Select the **Unblock** checkbox in the bottom right of the Properties windows and select **OK**.
 
-    ![Picture 1](../media/sc200-mod2-unblock.png)
+    ![Picture 1](../Media/sc200-mod2-unblock.png)
 
 1. Right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** again and choose **Run as Administrator**.  **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
     
@@ -71,7 +71,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. Press any key to continue. This will close the Command Prompt window.
 
-    ![Picture 1](../media/SC-200-img25.png)
+    ![Picture 1](../Media/SC-200-img25.png)
 
 1. Back in the Onboarding page from the Microsoft Defender portal, under the section "2. Run a detection test", copy the detection test script by selecting the **Copy** button.  
 
@@ -83,7 +83,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. In the Microsoft Defender portal, in the left-hand menu, under the **Assets** area, select **Devices**. If the device is not shown, complete the next task and come back to check it back later. It can take up to 60 minutes for the first device to be displayed in the portal.
 
-     ![Picture 1](../media/SC-200-img22.png)
+     ![Picture 1](../Media/SC-200-img22.png)
 
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
     
@@ -153,7 +153,7 @@ In this task, you will configure device groups that allow for access control and
     |General setting|Value|
     |---|---|
     |Device group name|**Regular**|
-    |Remediation level| Full-remediate threats automatically|
+    |ReMediation level| Full-reMediate threats automatically|
 
 1. Select **Next**.
 
@@ -169,7 +169,7 @@ In this task, you will configure device groups that allow for access control and
 
 1. Device group configuration has changed. Select **Apply changes** to check matches and recalculate groupings.
 
-1. You are going to have two device groups now; the **Regular** you just created and the **Ungrouped devices (default)** with the same remediation level.
+1. You are going to have two device groups now; the **Regular** you just created and the **Ungrouped devices (default)** with the same reMediation level.
 
 ## Review
 In this lab, you will perform the following:
