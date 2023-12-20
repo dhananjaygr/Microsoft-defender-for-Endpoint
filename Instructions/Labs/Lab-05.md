@@ -57,10 +57,108 @@
 
     ![Picture 1](../Media/asr-mem-my-asr-rules.png)
 
+### Task 2: Configure Web Content Filtering
 
+1. Open [Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) portal and sign in.
 
+1. In the navigation pane, select **Settings > Endpoints > General > Advanced Features**.
 
+1. Scroll down until you see **Web content filtering**.
 
+1. Switch the toggle to **On**, and then select **Save preferences**.
 
+    >**Note:** If it is On, the toggle button will not be visible to you; you can move on to the next step.
 
+1. Open another tab, and open [Microsoft Intune Admin Center](https://intune.microsoft.com/#home).
 
+1. From the left navigation pane, select **Endpoint security (1)**. On **Endpoint security | Overview** page, from the left navigation menu select **Antivirus (2)**.
+
+    ![Picture 1](../Media/endpoint-security.png)
+
+1. Select **+ Create Policy**. On **Create a profile** page, select **Windows 10, Windows 11 and Windows Server (1)**, under **Platform**, and select **Microsoft Defender Antivirus (2)** under **Profile**. Select **Create**.
+
+    ![Picture 1](../Media/createaprofile.png)
+
+1. On **Create profile** page, give the name of your choice, and select **Next**.
+
+1. In **Configuration settings**, enabling network protection and choice **Audit mode (6)** for testing the feature, and select **Next (8)**.
+
+    ![Picture 1](../Media/configurationsetting1.png)
+
+    ![Picture 1](../Media/configurationsettings2.png)
+
+    ![Picture 1](../Media/notconfigured1.png)
+
+    ![Picture 1](../Media/confidential1.png)
+
+1. Inside your Lab-VM, in **Type here to search** search for **Windows PowerShell**, right-click on it and Select **Run as administrator**. Run these commands to enable block mode and audit mode.
+
+    ```powershell
+    Set-MpPreference -EnableNetworkProtection Enabled
+    ```
+
+    ```powershell
+    Set-MpPreference -EnableNetworkProtection AuditMode
+    ```
+
+1. Now, navigate back to the Microsoft Defender portal, choose **Settings > Endpoints > Web content filtering > + Add policy**.
+
+1. On the **Add Policy** page, under **General Details**, provide a **Policy name (1)** of your choice, and select **Next (2)**.
+
+    ![Picture 1](../Media/add-policy2.png)
+
+1. On **Blocked Categories** page, select the categories to block, select specific web content categories, and select **Next**.
+
+    >**Note:** 
+    > Web content filtering policies specify which site categories are blocked on which device groups.
+    -  Policies can be deployed to block any of the following parent or child categories:
+
+        |**Parent category**|**Child categories**|
+        |-------------------|--------------------|
+        |**Adult content**|- **Cults**: Sites related to groups or movements whose members demonstrate passion for a belief system that is different from those that are socially accepted.
+        || - **Gambling**: Online gambling and sites that promote gambling skills and practice.
+        ||- **Nudity**: Sites that provide full-frontal and semi-nude images or videos, typically in artistic form, and might allow the download or sale of such materials.
+        ||- **Pornography / Sexually explicit**: Sites containing sexually explicit content in an image-based or textual form. Any form of sexually oriented material is also listed here.
+        ||- **Sex education**: Sites that discuss sex and sexuality in an informative and non-voyeuristic way, including sites that provide education about human reproduction and contraception, sites that offer advice on preventing infection from sexual diseases, and sites that offer advice on sexual health matters.
+        ||- **Tasteless**: Sites oriented towards content unsuitable for school children to view or that an employer would be uncomfortable with their staff accessing, but not necessarily violent or pornographic.
+        ||- **Violence**: Sites that display or promote content related to violence against humans or animals.
+        |**High bandwidth**|- **Download sites**: Sites whose primary function is to allow users to download media content or programs, such as computer programs.
+        ||- **Image sharing**: Sites that are used primarily for searching or sharing photos, including those that have social aspects.
+        ||- **Peer-to-peer**: Sites that host peer-to-peer (P2P) software or facilitate the sharing of files using P2P software.
+        ||- **Streaming media & downloads**: Sites whose primary function is the distribution of streaming media, or sites that allow users to search, watch, or listen to streaming media.
+        |**Legal liability**|- **Child abuse images**: Sites that include child abuse images or pornography.
+        ||- **Criminal activity**: Sites that give instruction on, advice about, or promotion of illegal activities.
+        ||- **Hacking**: Sites that provide resources for illegal or questionable use of computer software or hardware, including sites that distribute copyrighted material that has been cracked.
+        ||- **Hate & intolerance**: Sites promoting aggressive, degrading, or abusive opinions about any section of the population that could be identified by race, religion, gender, age, nationality, physical disability, economic situation, sexual preferences or any other lifestyle choice.
+        ||- **Illegal drug**: Sites that sell illegal/controlled substances, promote substance abuse, or sell related paraphernalia.
+        ||- **Illegal software**: Sites that contain or promote the use of malware, spyware, botnets, phishing scams, or piracy & copyright theft.
+        ||- **School cheating**: Sites related to plagiarism or school cheating.
+        ||- **Self-harm**: Sites that promote self-harm, including cyberbullying sites that contain abusive and/or threatening messages towards users.
+        ||- **Weapons**: Any site that sells weapons or advocates the use of weapons, including but not limited to guns, knives, and ammunition.|
+        |**Leisure**| - **Chat**: Sites that are primarily web-based chat rooms.
+        ||- **Games**: Sites relating to video or computer games, including sites that promote gaming through hosting online services or information related to gaming.
+        ||- **Instant messaging**: Sites that can be used to download instant messaging software or client based instant messaging.
+        ||- **Professional network**: Sites that provide professional networking services.
+        ||- **Social networking**: Sites that provide social networking services.
+        ||- **Web-based email**: Sites offering web-based mail services.|
+        |**Uncategorized**|	- **Newly registered domains**: Sites that have been newly registered in the past 30 days and have not yet been moved to another category.
+        ||- **Parked domains**: Sites that have no content or are parked for later use.|
+        |               |                   |
+
+1. On **Scope** page, keep it default and select **Next**.
+
+1. On the **Summary** page, review the summary select **Submit**, and select **Done**.
+
+    ![Picture 1](../Media/addpolicy.png)
+
+### Task 4: Testing Web Content Filtering policy
+
+1. Open an In-private browsing window and visit the following URLs: **store.steampowered.com** and **roundcube.net**.
+
+1. View the results, which indicate that network protection is enabled, and web content filtering is set to block the '**games**' category and **web-based mail**.
+
+    ![Picture 1](../Media/blockedcontent.png)
+
+    ![Picture 1](../Media/blockedcontent1.png)
+
+    >**Note:** If the output does not appear as expected, please be patient and wait for some time; it should eventually match your expectations.
