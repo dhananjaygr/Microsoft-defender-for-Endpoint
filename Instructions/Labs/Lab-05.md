@@ -162,3 +162,38 @@
     ![Picture 1](../Media/blockedcontent1.png)
 
     >**Note:** If the output does not appear as expected, please be patient and wait for some time; it should eventually match your expectations.
+
+### Task 5: Automatic Investigation and response (AIR) 
+
+1. Navigate back to the **Microsoft Defender portal**. From the left navigation pane select **Permissions**, under **Endpoints roles and groups**, select **Device groups**.
+
+1. Select **+ Add device group**.
+
+1. On **Add device group** page, Create at least one device group, as follows:
+
+    - Specify a **name** and **description** for the device group.
+    - In the Automation level list, select a level, such as **Full - remediate threats automatically**. The automation level determines whether remediation actions are taken automatically, or only upon approval. To learn more, see Automation levels in automated investigation and remediation, and select **Next**.
+    - On the **Devices** category, under the **OS** status, choose the **Value** drop-down menu, and opt for **Windows Server 2019 (1)** from the available options. Select **Next (2)**.
+
+        ![Picture 1](../Media/devices1.png)
+
+    - On **Preview devices** page, select **Show preview (1)**, and it will show the device which matches groups. Select **Next (2)**.
+
+        ![Picture 1](../Media/client1.png)
+
+    -   On **User access** page, select the checkbox of the group, select **Add selected groups**, and select **Submit**. Select **Done** once completed.
+
+1. From the left-navigation menu, select **Actions & submissions**, select **Action center**.
+
+1. Use the **Pending actions** and **History** tabs. The following table summarizes what you'll see on each tab:
+
+    |Tab|Description|
+    |---|-----------|
+    |Pending|Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as Quarantine file).
+    >**TIP**: Make sure to review and approve (or reject) pending actions as soon as possible so that your automated investigations can complete in a timely manner.
+
+History	Serves as an audit log for actions that were taken, such as:
+Remediation actions that were taken as a result of automated investigations
+Remediation actions that were approved by your security operations team
+Commands that were run and remediation actions that were applied during Live Response sessions
+Remediation actions that were taken by threat protection features in Microsoft Defender Antivirus
