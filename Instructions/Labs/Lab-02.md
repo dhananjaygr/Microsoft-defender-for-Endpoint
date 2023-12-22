@@ -2,13 +2,22 @@
 
 ## Lab scenario
 
-## Lab objectives (Duration: 60 minutes)
+The objective of this lab is to provide participants with hands-on experience in onboarding machines to Microsoft Defender for Endpoint. It involves the process of integrating and configuring them to seamlessly connect with a security or management system. This typically includes installing necessary software, configuring settings, and ensuring compliance with security policies. In the context of Microsoft Defender for Endpoint, onboarding Windows client devices involves downloading and installing the Defender for Endpoint client, confirming successful onboarding, and configuring security policies to enhance threat protection on the Windows devices.
+
+## Lab objectives
+
+In this lab, you will perform the following:
+
+- Task 1: Onboard Windows Client devices 
+- Task 2: Run a detection test
 
 ## Architecture Diagram
 
-### Task 1: Onboard a Device
+  ![Picture 1](../Media/Architecture-02.png)
 
-In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
+### Task 1: Onboard Windows Client devices
+
+In this task, you will onboard windows client devices to Microsoft Defender for Endpoint using an onboarding script.
 
 1. If you are not already at the Microsoft Defender portal in your browser, start the Microsoft Edge browser go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
 
@@ -49,3 +58,25 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
      ![Picture 1](../Media/SC-200-img22.png)
 
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
+
+### Task 2: Run a detection test
+
+In this task, run the following PowerShell script on a newly onboarded device to verify that it's properly reporting to the Defender for Endpoint service.
+
+1. Inside the Lab-VM, select **Type here to search**, and search for **CMD**, right-click on **Command Prompt** and select **Run as administrator**.
+
+1. At the prompt, copy and run the following command:
+
+    ```powershell
+    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
+    ```
+    
+    >**Note**: The Command Prompt window closes automatically. If successful, a new alert appears in the portal for the onboarded device in about 10 minutes.
+
+## Review
+In this lab, you have completed the following:
+
+- Onboarded Windows Client devices 
+- Ran a detection test
+
+## You have successfully completed the lab.

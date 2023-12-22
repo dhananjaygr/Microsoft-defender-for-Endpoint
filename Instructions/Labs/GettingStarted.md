@@ -1,18 +1,15 @@
-# Getting Started
+# Getting Started with the Lab (In-Progress)
 
-1. Once the environment is provisioned, a virtual machine and lab guide will be loaded into your browser. To complete the lab, utilize this virtual machine during the session.
+1. After the environment has been set up, your browser will load a virtual machine (JumpVM), use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
  
-     ![Picture1](../media/gt1.1.png)
+1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your registered email address. You can also open the Lab Guide in a separate and full window by selecting the **Split Window** from the lower right corner. 
 
-1. To get the lab environment details, you can select the **Environment Details** tab.
+    ![](../Media/intro2.png)
 
-    ![Picture1](../media/gt2.12.png)
+1. You can start, stop, and restart virtual machines from the **Resources** tab.
 
-1. Also, you can **start, stop, and restart** the virtual machines from the **Resources** tab.
+   ![](../Media/intro3.png)
 
-   ![Picture1](../media/gt3.png)     
-
-1. Click on **Next** from the bottom right and follow the instructions to perform the lab.
-
-     ![Picture1](../media/gt4.png ) 
-
+1. Click "Next" from the bottom right corner to embark on your Lab journey!
+ 
+   ![Start Your Azure Journey](../Media/intro(4).png)

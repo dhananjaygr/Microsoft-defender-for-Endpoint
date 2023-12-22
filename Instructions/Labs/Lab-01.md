@@ -1,41 +1,40 @@
-# Lab 01 - Deploy Microsoft Defender for Endpoint
+# Lab 01 - Implement Microsoft Defender for Endpoint
 
 ## Lab scenario
 
-You are a Security Operations Analyst working at a company that is implementing Microsoft Defender for Endpoint. Your manager plans to onboard a few devices to provide insight into required changes to the Security Operations (SecOps) team response procedures.
+The objective of this lab is to provide a hands-on experience in setting up and configuring Microsoft Defender for Endpoint, a comprehensive endpoint security solution. Participants will learn how to enhance the security posture of their organization's endpoints by implementing various features and policies offered by Defender for Endpoint.
 
-You start by initializing the Defender for the Endpoint environment. Next, you onboard the initial devices for your deployment by running the onboarding script on the devices. You configure security for the environment. Lastly, you create Device groups and assign the appropriate devices.
 
->**Important:**  The lab Virtual Machines are used through different modules. SAVE your virtual machines. If you exit the lab without saving, you will be required to re-run some configurations again.
+## Lab objectives
 
-## Lab objectives (Duration: 60 minutes)
 In this lab, you will perform the following:
-- Task 1: Preparing the Microsoft Defender workspace
-- Task 2: Initialize Microsoft Defender for Endpoint
-- Task 3: Configure Roles
-- Task 4: Configure Device Groups
+
+- Task 1: Setup Defender for Endpoint  
+- Task 2: Configure Roles
+- Task 3: Configure Device Groups
+- Task 4: Create Baseline Policies
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/part1lab02.png)
+  ![Picture 1](../Media/Architecture-01.png)
 
-### Task 1: Initialize Microsoft Defender for Endpoint
+### Task 1: Setup Defender for Endpoint  
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
 
-1. If you are not already at the Microsoft Defender portal, start the Microsoft Edge browser.
+1. Inside the Lab-VM, select **Type here to search**, search for **Microsoft Edge** and select it.
 
-1. In the Edge browser, go to the Microsoft Defender portal at (https://security.microsoft.com).
+1. In the Edge browser, navigate to the [Microsoft Defender portal](https://security.microsoft.com).
 
 1. In the **Sign in** dialog box, copy and paste Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
 1. In the **Enter password** dialog box, copy and paste Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
-1. On the **Microsoft Defender** portal, from the navigation menu, select **Settings** from the left.
+1. On the **Microsoft Defender** portal, from the left-navigation menu, select **Settings (1)** from the left.
 
-1. On the **Settings** page select **Device discovery**. 
+1. On the **Settings** page select **Device discovery (2)**. 
 
-    ![Picture 1](../Media/SC200-img1.png)
+    ![Picture 1](../Media/devicediscovery.png)
 
     >**Note:** If you do not see the **Device discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try are to refresh the page, wait for 20-25 minutes or open the page InPrivate. Login again with the **Tenant Email** credentials.
 
@@ -43,7 +42,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
     >**Hint:** If you do not see the option, refresh the page.
 
     
-### Task 3: Configure Roles
+### Task 2: Configure Roles
 
 In this task, you will configure roles for use with device groups.
 
@@ -94,7 +93,7 @@ In this task, you will configure roles for use with device groups.
 
 1. Select **Submit** and Done. If you receive an error while saving the role, refresh the page and try again.
 
-### Task 4: Configure Device Groups
+### Task 3: Configure Device Groups
 
 In this task, you will configure device groups that allow for access control and automation configuration.
 
@@ -109,7 +108,7 @@ In this task, you will configure device groups that allow for access control and
     |General setting|Value|
     |---|---|
     |Device group name|**Regular**|
-    |ReMediation level| Full-reMediate threats automatically|
+    |ReMediation level| Full-ReMediate threats automatically|
 
 1. Select **Next**.
 
@@ -127,9 +126,42 @@ In this task, you will configure device groups that allow for access control and
 
 1. You are going to have two device groups now; the **Regular** you just created and the **Ungrouped devices (default)** with the same reMediation level.
 
+### Task 4: Create Baseline Policies
+
+1. Open another tab and browse to the [Microsoft Intune admin center](intune.microsoft.com).
+
+1. From the left navigation pane, select **Endpoint security(1)**, under **Overview** section, select **Security Baselines (2)**.
+
+1. On the **Endpoint security | Security baselines**, select **Security Baseline for Windows 10 and later (3)**.
+
+    ![Picture 1](../Media/securitybaseline.png)
+
+1. On the **MDM Security Baseline | Profiles** page, select **Create profile**.
+
+    ![Picture 1](../Media/createprofile(1).png)
+
+1. On the **Create profile** page, under the **Basics** tab, enter any **name (1)** of your choice and **description (optional)**, then select **Next (2)**.
+
+    ![Picture 1](../Media/mdm-policy.png)
+
+1. On the **Configuration settings** tab, review all configurations by expanding each one. If you want to edit any of the configurations, feel free to make your changes. Select **Next**.
+
+1. Keep the **Scope tags** tab as default, select **Next**.
+
+1. On the **Assignments** tab, under **Included groups**, select **Add groups**, on the **Select groups to include** page, choose **Sg-IT**, and click on **Select**. Select **Next**.
+
+1. On the **Review + create** page, select **Create**.
+
+1. After the policy is created, you will be able to view it in the **MDM Security Baseline | Profiles section**.
+
+    ![Picture 1](../Media/securitybaseline1.png)
+
 ## Review
-In this lab, you will perform the following:
-- Preparing the Microsoft 365 Defender workspace
-- Initialize Microsoft Defender for Endpoint
-- Configure Roles
-- Configure Device Groups
+In this lab, you have completed the following:
+
+- Setup Defender for Endpoint 
+- Configured Roles
+- Configured Device Groups
+- Created Baseline Policies
+
+## You have successfully completed the lab.

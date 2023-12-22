@@ -2,9 +2,20 @@
 
 ## Lab scenario
 
-## Lab objectives (Duration: 60 minutes)
+The objective of this lab is to provide a hands-on experience in configuring and testing the capabilities of Microsoft Defender for Endpoint. Participants will engage in setting up Defender for Endpoint on Windows client devices, configuring various security policies, and testing its threat detection and response capabilities. Through practical exercises, participants will gain insights into enhancing endpoint security, ensuring compliance, and effectively mitigating potential threats using Defender for Endpoint features.
+
+## Lab objectives
+
+In this lab, you will perform the following:
+
+- Task 1: Create Attack Surface Reduction Rules  
+- Task 2: Configure Web Content Filtering 
+- Task 3: Testing Web Content Filtering policy 
+- Task 4: Explore Automatic Investigation and response (AIR)  
 
 ## Architecture Diagram
+
+  ![Picture 1](../Media/Architecture-05.png)
 
 ### Task 1: Create Attack Surface Reduction Rules 
 
@@ -151,7 +162,7 @@
 
     ![Picture 1](../Media/addpolicy.png)
 
-### Task 4: Testing Web Content Filtering policy
+### Task 3: Testing Web Content Filtering policy
 
 1. Open an In-private browsing window and visit the following URLs: **store.steampowered.com** and **roundcube.net**.
 
@@ -163,7 +174,7 @@
 
     >**Note:** If the output does not appear as expected, please be patient and wait for some time; it should eventually match your expectations.
 
-### Task 5: Automatic Investigation and response (AIR) 
+### Task 4: Explore Automatic Investigation and response (AIR) 
 
 1. Navigate back to the **Microsoft Defender portal**. From the left navigation pane select **Permissions**, under **Endpoints roles and groups**, select **Device groups**.
 
@@ -185,15 +196,64 @@
 
 1. From the left-navigation menu, select **Actions & submissions**, select **Action center**.
 
-1. Use the **Pending actions** and **History** tabs. The following table summarizes what you'll see on each tab:
+1. Use the **Pending** and **History** tabs. The following table summarizes what you'll see on each tab:
 
     |Tab|Description|
     |---|-----------|
-    |Pending|Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as Quarantine file).
-    >**TIP**: Make sure to review and approve (or reject) pending actions as soon as possible so that your automated investigations can complete in a timely manner.
+    |**Pending**|Displays a list of actions that require attention. You can approve or reject actions one at a time, or select multiple actions if they have the same type of action (such as Quarantine file).|
+    |**History**| Serves as an audit log for actions that were taken, such as:
+    
+    - Remediation actions that were taken as a result of automated investigations
+    - Remediation actions that were approved by your security operations team
+    - Commands that were run and remediation actions that were applied during Live Response sessions
+    - Remediation actions that were taken by threat protection features in Microsoft Defender Antivirus
+    
 
-History	Serves as an audit log for actions that were taken, such as:
-Remediation actions that were taken as a result of automated investigations
-Remediation actions that were approved by your security operations team
-Commands that were run and remediation actions that were applied during Live Response sessions
-Remediation actions that were taken by threat protection features in Microsoft Defender Antivirus
+1. To customize, sort, filter, and export data in the Action center, take one or more of the following steps:
+
+    - Choose the columns that you want to view (1).
+    - Specify how many items to include on each page of data (2).
+    - Use filters to view just the items you want to see (3).
+    - Select Export to export results to a .csv file (4).
+
+        ![Picture 1](../Media/actioncenter.png)
+
+1. Review the items on the **Pending** tab.
+
+1. Select an action to open its flyout pane.
+
+1. In the flyout pane, review the information, and then take one of the following steps:
+
+    - Select **Open investigation** page to view more details about the investigation.
+    - Select **Approve** to initiate a pending action.
+    - Select **Reject** to prevent a pending action from being taken.
+    - Select **Go hunt** to go into **Advanced hunting**.
+
+1. For incidents with a remediation status of **Pending approval**, you can also approve or reject a remediation action from within the incident. In the left-navigation pane, go to **Incidents & alerts > Incidents**.
+
+1. Select an incident name to open its summary page.
+
+1. Select the **Evidence and Response** tab.
+
+1. Select an item in the list to open its flyout pane.
+
+1. Review the information, and then take one of the following steps:
+    
+    - Select the Approve pending action option to initiate a pending action.
+    
+    - Select the Reject pending action option to prevent a pending action from being taken.
+
+1. Now, review the items on the **History** tab.
+
+1. Select an item to view more details about that remediation action.
+
+## Review
+
+In this lab, you have completed the following:
+
+- Created Attack Surface Reduction Rules  
+- Configured Web Content Filtering 
+- Tested Web Content Filtering policy 
+- Explored Automatic Investigation and response (AIR)
+
+## You have successfully completed the lab.

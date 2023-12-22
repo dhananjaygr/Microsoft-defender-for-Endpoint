@@ -1,1 +1,1 @@
-https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/evaluation-lab?view=o365-worldwide
+# Lab 07 - Setup an evaluation Lab: Try out various attack simulation scenarios based on your interest. (Content: In-progress)
