@@ -23,7 +23,7 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/Architecture-06.png)
+  ![Picture 1](../Media/Architecture-06.PNG)
 
 ### Task 1: Configure and launch a Drive-by URL attack 
 

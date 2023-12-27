@@ -28,7 +28,7 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/Architecture-05.png)
+  ![Picture 1](../Media/Architecture-05.PNG)
 
 ### Task 1: Create Attack Surface Reduction Rules 
 

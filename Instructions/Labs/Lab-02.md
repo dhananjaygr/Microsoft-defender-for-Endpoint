@@ -29,7 +29,7 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/Architecture-02.png)
+  ![Picture 1](../Media/Architecture-02.PNG)
 
 ### Task 1: Onboard Windows Client devices
 
