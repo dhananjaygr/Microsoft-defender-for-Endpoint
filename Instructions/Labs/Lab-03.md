@@ -1,8 +1,23 @@
 # Lab 03 - End to end EDR (Incident, Alerts, Actions & Live Responses)
 
+## Lab overview
+
+This lab encompasses the end-to-end process of incident detection, alert generation, response actions, and live responses within an EDR framework. Participants will gain hands-on experience in managing security incidents from detection to resolution, utilizing the live response feature for real-time remediation.
+
 ## Lab scenario
 
 Creating Incidents in Microsoft 365 Defender involves identifying potential security threats from various alerts and promptly responding to mitigate risks. Security analysts investigate these alerts to confirm their severity and impact.
+
+- Incident Detection: Participants will learn how EDR systems detect security incidents by monitoring endpoint activities and behaviors.
+Understanding the criteria for identifying potential incidents is a key focus.
+
+- Alert Generation: The lab emphasizes the automatic generation of alerts based on detected incidents. Participants will explore how EDR platforms categorize and prioritize alerts for efficient incident response.
+
+- Response Actions: Practical response actions to mitigate the impact of incidents will be explored.
+Participants will learn to leverage EDR capabilities to respond to incidents effectively.
+
+- Live Responses: The lab introduces participants to the concept of live responses for real-time remediation.
+Practical scenarios will be simulated where participants actively respond to ongoing security incidents.
 
 ## Lab objectives
 
@@ -12,6 +27,7 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
+![Picture 1](../Media/Architecture-033.PNG)
 
 ### Task 1: Simulated Attacks to create Incident
 

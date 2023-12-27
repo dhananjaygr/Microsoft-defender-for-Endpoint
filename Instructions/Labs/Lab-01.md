@@ -1,9 +1,18 @@
 # Lab 01 - Implement Microsoft Defender for Endpoint
 
+## Lab overview
+
+In this lab, participants will immerse themselves in the practical implementation of Microsoft Defender for Endpoint. The primary goal is to equip participants with the skills and knowledge necessary to fortify the security infrastructure of organizational endpoints.
+
 ## Lab scenario
 
 The objective of this lab is to provide a hands-on experience in setting up and configuring Microsoft Defender for Endpoint, a comprehensive endpoint security solution. Participants will learn how to enhance the security posture of their organization's endpoints by implementing various features and policies offered by Defender for Endpoint.
 
+- **Hands-On Experience**: Participants will actively engage with the Microsoft Defender for Endpoint platform, gaining practical experience in the setup and configuration processes. This hands-on approach allows them to familiarize themselves with the actual steps involved in deploying and managing Defender for Endpoint.
+
+- **Understanding Endpoint Security**: The lab emphasizes the significance of endpoint security, highlighting Defender for Endpoint as a robust solution. Participants will delve into the functionalities and capabilities of the platform, understanding how it plays a pivotal role in safeguarding organizational endpoints.
+
+- **Comprehensive Security Solution**: Defender for Endpoint is positioned as a comprehensive security solution. Throughout the lab, participants will explore the diverse features and components that contribute to its comprehensive nature. This includes aspects such as threat detection, response mechanisms, and integration with other security tools.
 
 ## Lab objectives
 
@@ -127,6 +136,8 @@ In this task, you will configure device groups that allow for access control and
 1. You are going to have two device groups now; the **Regular** you just created and the **Ungrouped devices (default)** with the same reMediation level.
 
 ### Task 4: Create Baseline Policies
+
+The Windows Intune security baseline provides a comprehensive set of recommended settings needed to securely configure devices running Windows, including browser settings, PowerShell settings, and settings for some security features like Microsoft Defender Antivirus.
 
 1. Open another tab and browse to the [Microsoft Intune admin center](intune.microsoft.com).
 

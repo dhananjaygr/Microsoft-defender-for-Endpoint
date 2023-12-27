@@ -1,8 +1,20 @@
 # Lab 07 - Setup an evaluation Lab
 
+## Lab overview
+
+The lab encompasses the setup of an evaluation lab, the addition of devices to the lab environment, and the execution of Threat Simulator scenarios. Participants will actively engage in building and assessing a controlled environment to simulate and respond to potential cybersecurity threats.
+
 ## Lab scenario
 
 The objective of this lab is to provide a hands-on experience in setting up an evaluation environment. This involves configuring the lab, adding devices, and implementing various threat simulator scenarios.
+
+- Setup the Evaluation Lab: Participants will learn the process of setting up an evaluation lab environment for simulating cybersecurity scenarios.
+Understanding the importance of controlled environments for testing and evaluation is a key objective.
+
+- Add Devices: The lab guides participants in adding devices to the evaluation lab environment.
+Participants will understand the steps involved in expanding the lab to include diverse devices.
+
+- Threat Simulator Scenarios: Participants will actively execute Threat Simulator scenarios within the lab.
 
 ## Lab objectives (Duration: minutes)
 
@@ -14,6 +26,7 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
+![Picture 1](../Media/Architecture-07.PNG)
 
 ### Task 1: Setup the evaluation lab
 

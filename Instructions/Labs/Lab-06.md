@@ -1,8 +1,18 @@
 # Lab 06 - Simulate & Investigate Attacks
 
+## Lab overview
+
+Participants will actively engage in configuring and launching a simulated Drive-by URL attack, gaining insights into the techniques and potential impact of such attacks. The lab aims to enhance participants' awareness of cyber threats and provide hands-on experience in validating the simulated attack.
+
 ## Lab scenario
 
 In this lab, participants configured and executed a simulated Drive-by URL attack, a common cybersecurity threat. By setting up the attack parameters and launching it, participants gained practical insights into the techniques employed by attackers in spreading malware through malicious websites. Additionally, participants validated the success of the simulated Drive-by URL attack, allowing for a comprehensive understanding of the potential risks and the importance of robust cybersecurity measures to counter such threats.
+
+- Configure and Launch a Drive-by URL Attack: Participants will actively configure the parameters and launch a simulated Drive-by URL attack.
+Understanding the mechanics of Drive-by URL attacks and their potential impact is a key objective.
+
+- Validate the Simulated Drive-by URL Attack: The lab guides participants in validating the effectiveness of the simulated Drive-by URL attack.
+Participants will assess the impact of the attack and explore potential indicators of compromise.
 
 ## Lab objectives
 

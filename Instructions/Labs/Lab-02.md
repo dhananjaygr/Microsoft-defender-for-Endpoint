@@ -1,8 +1,24 @@
 # Lab 02 - Onboard Machines
 
+## Lab overview
+
+Microsoft Defender for Endpoint and running detection tests to assess the responsiveness of the security service. Participants will actively engage in setting up and configuring Defender for Endpoint, understanding how to seamlessly integrate devices and evaluate their effectiveness in threat detection scenarios.
+
 ## Lab scenario
 
 The objective of this lab is to provide participants with hands-on experience in onboarding machines to Microsoft Defender for Endpoint. It involves the process of integrating and configuring them to seamlessly connect with a security or management system. This typically includes installing necessary software, configuring settings, and ensuring compliance with security policies. In the context of Microsoft Defender for Endpoint, onboarding Windows client devices involves downloading and installing the Defender for Endpoint client, confirming successful onboarding, and configuring security policies to enhance threat protection on the Windows devices.
+
+- **Onboard Windows Client devices**
+
+    - Initiate Onboarding: Participants will initiate the onboarding process from the Microsoft Defender portal, downloading and executing the onboarding script.
+    - Verify Onboarding Success: Emphasis will be placed on verifying the successful onboarding of Windows client devices and troubleshooting any potential issues.
+    - Understand Onboarding Best Practices: Participants will learn best practices for effective onboarding, ensuring that devices are properly configured and compliant.
+
+- **Run a Detection Test**
+
+    - Execute Detection Test Script: Participants will run a detection test script on the newly onboarded devices using PowerShell.
+    - Verify Defender for Endpoint Responsiveness: The script execution will verify that devices properly report to the Defender for Endpoint service, ensuring its responsiveness.
+    - Real-world Significance: Participants will understand the real-world significance of detection tests, assessing the system's ability to detect and respond to potential threats.
 
 ## Lab objectives
 

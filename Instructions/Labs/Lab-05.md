@@ -1,8 +1,21 @@
 # Lab 05 - Configure & Test Defender for Endpoint capabilities
 
-## Lab scenario
+## Lab overview
 
 The objective of this lab is to provide a hands-on experience in configuring and testing the capabilities of Microsoft Defender for Endpoint. Participants will engage in setting up Defender for Endpoint on Windows client devices, configuring various security policies, and testing its threat detection and response capabilities. Through practical exercises, participants will gain insights into enhancing endpoint security, ensuring compliance, and effectively mitigating potential threats using Defender for Endpoint features.
+
+## Lab scenario
+
+- Create Attack Surface Reduction Rules: Participants will learn the process of creating rules for attack surface reduction.
+Understanding how to limit the attack surface and mitigate potential security risks is a key objective.
+
+- Configure Web Content Filtering: The lab guides participants in configuring web content filtering policies. Understanding the importance of controlling web content access and implementing appropriate filtering measures.
+
+- Testing Web Content Filtering Policy: Practical scenarios will be simulated to test the effectiveness of web content filtering policies.
+Participants will actively assess the impact of configured policies on web content access.
+
+- Explore Automatic Investigation and Response (AIR): Participants will explore the capabilities of Automatic Investigation and Response (AIR).
+Understanding how automated response mechanisms can enhance incident detection and response.
 
 ## Lab objectives
 
