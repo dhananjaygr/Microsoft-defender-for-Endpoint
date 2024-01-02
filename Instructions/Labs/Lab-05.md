@@ -6,15 +6,15 @@ The objective of this lab is to provide a hands-on experience in configuring and
 
 ## Lab scenario
 
-- Create Attack Surface Reduction Rules: Participants will learn the process of creating rules for attack surface reduction.
+- **Create Attack Surface Reduction Rules**: Participants will learn the process of creating rules for attack surface reduction.
 Understanding how to limit the attack surface and mitigate potential security risks is a key objective.
 
-- Configure Web Content Filtering: The lab guides participants in configuring web content filtering policies. Understanding the importance of controlling web content access and implementing appropriate filtering measures.
+- **Configure Web Content Filtering**: The lab guides participants in configuring web content filtering policies. Understanding the importance of controlling web content access and implementing appropriate filtering measures.
 
-- Testing Web Content Filtering Policy: Practical scenarios will be simulated to test the effectiveness of web content filtering policies.
+- **Testing Web Content Filtering Policy**: Practical scenarios will be simulated to test the effectiveness of web content filtering policies.
 Participants will actively assess the impact of configured policies on web content access.
 
-- Explore Automatic Investigation and Response (AIR): Participants will explore the capabilities of Automatic Investigation and Response (AIR).
+- **Explore Automatic Investigation and Response (AIR)**: Participants will explore the capabilities of Automatic Investigation and Response (AIR).
 Understanding how automated response mechanisms can enhance incident detection and response.
 
 ## Lab objectives

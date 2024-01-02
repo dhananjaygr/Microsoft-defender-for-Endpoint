@@ -6,10 +6,10 @@ This lab focuses on utilizing a Vulnerability Management Dashboard to gain an ov
 
 ## Lab scenario
 
-- Overview of Vulnerability Management Dashboard: Participants will gain familiarity with the Vulnerability Management Dashboard.
+- **Overview of Vulnerability Management Dashboard**: Participants will gain familiarity with the Vulnerability Management Dashboard.
 Understanding how to navigate and interpret the dashboard for effective vulnerability assessment is a key focus.
 
-- Security Recommendations: The lab guides participants in accessing and utilizing security recommendations within the Vulnerability Management Dashboard. Participants will learn how to prioritize and implement recommended security measures to address identified vulnerabilities.
+- **Security Recommendations**: The lab guides participants in accessing and utilizing security recommendations within the Vulnerability Management Dashboard. Participants will learn how to prioritize and implement recommended security measures to address identified vulnerabilities.
 
 ## Lab objectives
 
