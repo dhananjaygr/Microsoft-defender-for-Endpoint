@@ -20,6 +20,8 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
+![Picture 1](../Media/Architecture-04.4.PNG)
+
 ### Task 1: Overview of Vulnerability Management dashboard
 
 You can use Defender Vulnerability Management dashboard in the Microsoft Defender portal to:

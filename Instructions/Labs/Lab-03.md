@@ -28,7 +28,7 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
-![Picture 1](../Media/Architecture-033.PNG)
+![Picture 1](../Media/Architecture-03.3.PNG)
 
 ### Task 1: Create Incident and alerts
 
