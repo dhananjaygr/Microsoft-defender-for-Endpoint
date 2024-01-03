@@ -25,13 +25,15 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/Architecture-01.PNG)
+  ![Picture 1](../Media/arch-1.1.PNG)
 
 ### Task 1: Setup Defender for Endpoint  
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
 
-1. Inside the Lab-VM, select **Type here to search**, search for **Microsoft Edge** and select it.
+1. Inside the Lab-VM, select **Type here to search**, type **Microsoft Edge (1)** and select it (2).
+
+    ![Picture 1](../Media/typeheretosearch.png)
 
 1. In the Edge browser, navigate to the [Microsoft Defender portal](https://security.microsoft.com).
 
