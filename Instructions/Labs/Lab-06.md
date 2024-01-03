@@ -57,7 +57,7 @@ In this lab, you will perform the following:
 	- From name: **ODL_User <inject key="DeploymentID" enableCopy="false"/>**
 	- From email: **<inject key="AzureAdUserEmail"></inject>**
 	- Email subject: **Free toy giveaway promotion from Tailspin Toys**
-	- Select a URL you want to be your phishing link: select the **Select URL** button, which opens a pane of predefined phishing link URLs; select **https://www.prizegives.com** from the list of fictitious URLs (to quickly find this URL, enter **prizegives** in the Search box). and then select **Confirm** 
+	- Select a URL you want to be your phishing link: select the **Select URL** button, which opens a pane of predefined phishing link URLs; select **https://www.prizegives.com** from the list of fictitious URLs (to quickly find this URL, type **prizegives** and press enter in the Search box). and then select **Confirm** 
 	- Theme: **Personalized Offer**
 	- Industry: **Retail**
 	- Current Event: **Yes**
@@ -96,9 +96,9 @@ In this lab, you will perform the following:
 
 1. On the **Target Users** page, verify the **Include only specific users and groups** option is selected (if not, select it now), and then select **+ Add Users**. 
 
-1. In the **Add Users** pane that appears, in the **Search for Users or Groups** field at the top of the pane, enter **ODL_User <inject key="DeploymentID" enableCopy="false"/>** and then hit Enter. In the list of users that appears whose name starts with Lynne, select **ODL_User <inject key="DeploymentID" enableCopy="false"/>** and then select **Add 1 User(s)**.
+1. In the **Add Users** pane that appears, in the **Search for Users or Groups** field at the top of the pane, type **ODL_User <inject key="DeploymentID" enableCopy="false"/>** and then hit Enter. In the list of users that appears select **ODL_User <inject key="DeploymentID" enableCopy="false"/>** and then select **Add 1 User(s)**.
 
-1. On the **Target Users** page, Lynne Robbins should be displayed as the targeted user. Select **Next** and then select **Next** again on the **Exclude users** page. 
+1. On the **Target Users** page, **ODL_User <inject key="DeploymentID" enableCopy="false"/>** should be displayed as the targeted user. Select **Next** and then select **Next** again on the **Exclude users** page. 
 
 1. On the **Assign Training** page, under the **Preferences** section, the **Assign training for me (Recommended)** option should be selected by default (if not, select it now). Select the **Due Date** field. In the drop-down menu that appears, select **7 days after Simulation ends** and then select **Next**.
 
@@ -121,9 +121,9 @@ In this lab, you will perform the following:
 
 1. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
-1. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. It may take a few minutes before you receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.  <br/>
+1. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. It may take a few minutes before you receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
 
-	>**Note:** Once the simulated drive-by URL attack is launched, an email should be sent to Lynne Robbins. It can take up to 15 minutes for the email to be generated. Rather than waiting for the email to be generated, you will validate the email and review the diagnostic results of the attack in Exercise 7, task 5 of this lab.
+	>**Note:** Once the simulated drive-by URL attack is launched, an email should be sent to <inject key="AzureAdUserEmail"></inject>. It can take up to 15 minutes for the email to be generated.
 
 1. Leave your Edge browser and all tabs open and proceed to the next exercise.
 
@@ -143,7 +143,7 @@ In this lab, you will perform the following:
 
 1. To test this simulated attack, select the **Free25thAnniversaryGift@tailspintoys.com** link. Note what happens - the simulated drive-by URL attack displays a web page that indicates you were just phished by your IT team. It instructs you that legitimate sounding sites such as **https://www.prizegives.com**, which was the site linked to the **Free25thAnniversaryGift@tailspintoys.com** link, have been compromised by malicious attackers. So even though you may see the underlying www.prizegives.com site and you think it's legitimate, it's in fact been compromised. This site also shows you a list of information that could have been captured had this been a real attack. 
 
-1. In your Edge browser, select the tab containing Outlook mailbox. Note the additional email that arrived in Inbox from the **Security and Compliance Team**. This is a legitimate email that was sent. When you configured the simulated spear phishing attack, one of the options you selected was to send a weekly Microsoft default training reminder notification.
+1. Note the additional email that arrived in Inbox from the **Security and Compliance Team**. This is a legitimate email that was sent. When you configured the simulated spear phishing attack, one of the options you selected was to send a weekly Microsoft default training reminder notification.
 
 1. Close, the Outlook tab.
 

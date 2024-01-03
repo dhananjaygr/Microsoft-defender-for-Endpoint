@@ -16,7 +16,7 @@ Participants will understand the steps involved in expanding the lab to include 
 
 - **Threat Simulator Scenarios**: Participants will actively execute Threat Simulator scenarios within the lab.
 
-## Lab objectives (Duration: minutes)
+## Lab objectives
 
 In this lab, you will perform the following:
 
@@ -42,15 +42,15 @@ In this lab, you will perform the following:
 
 1. Depending on your evaluation needs, you can choose to setup an environment with fewer devices for a longer period or more devices for a shorter period. Select your preferred lab configuration then select **Next**.
 
-    ![Picture 1](../Media/lab-creation-page.png)
+    ![Picture 1](../Media/labconfigurations.png)
 
 1. On the **Install simulators agent** tab, under the **Microsoft privacy statement**, select **Provide consent by accepting the Microsoft terms (1)**. This action will display the **Microsoft terms** page; here, you should select **I accept**. Now, return to the **Install simulators agent** tab, and select **Provide consent by accepting the information sharing statement (2)**. On the **Microsoft information sharing statement** page, again select **I accept**.
 
-1. Under **Select vendors**, accept the license agreement of **AttackIQ (3)** select the checkbox of **AttackIQ**, and select the checkbox of **SafeBreach (4)**, fill these credentials, after filling the credentials select **Update**, and then select **Next**.
+1. Under **Select vendors**, accept the license agreement of **AttackIQ (3)** by selecting the links which is written under the AttackID, select the checkbox of **AttackIQ**, and select the checkbox of **SafeBreach (4)**, fill these credentials, after filling the credentials select **Next**.
 
     - Email address: <inject key="AzureAdUserEmail"></inject>
-    - First name: odl_
-    - Last name: user <inject key="DeploymentID" enableCopy="false"/>
+    - First name: odl
+    - Last name: user <inject key="DeploymentID" enableCopy="false"/></inject>
 
         ![Picture 1](../Media/install-simulator.png)
 
@@ -64,11 +64,9 @@ In this lab, you will perform the following:
 
 1. On the **Your evaluation lab** page, select **Devices** tab.
 
-1. On the **Devices** page, click **+ Add device**, choose **Windows 11 (1)** from the **Device type** drop-down, select your preferred tools from **Available Tools (2)**, and then click **Add device (3)**.
+1. On the **Devices** page, click **+ Add device**, choose **Windows 10** from the **Device type** drop-down, select your preferred tools from **Available Tools**, and then click **Add device**.
 
     >**Note:** You can choose to add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu).
-
-    ![Picture 1](../Media/add-device.png)
 
     >**Note:** If something goes wrong with the device creation process, you'll be notified and you'll need to submit a new request. If the device creation fails, it will not be counted against the overall allowed quota.
 
@@ -78,7 +76,9 @@ In this lab, you will perform the following:
 
     ![Picture 1](../Media/add-machine-eval-lab-new.png)
 
-1. Device set up begins. This can take up to approximately 30 minutes.
+1. Device setup begins. This may take more than 2-3 hours. 
+
+    >**Note:** You can move on to the next tasks; you can come back after 2-3 hours and check.
 
 1. See the status of test devices, the risk and exposure levels, and the status of simulator installations by selecting the Devices tab.
 
