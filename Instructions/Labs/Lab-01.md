@@ -82,9 +82,9 @@ In this task, you will configure roles for use with device groups.
     |Group Name| **Sg-IT** |
     |Microsoft Entra roles can be assigned to the group| **Yes** |
 
-1. Under **Owners** section, click on **No owners selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **select**.
+1. Under **Owners** section, click on **No owners selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"></inject>** from the list and then click on **select**.
 
-1. Under **Members** section, click on **No members selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **select**.
+1. Under **Members** section, click on **No members selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"></inject>** from the list and then click on **select**.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
 

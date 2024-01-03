@@ -104,6 +104,8 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
     >**Note:** If you are unable to see the incident, please wait for 15-30 minutes; it will appear.
 
+    >**Note:** Select **Close** on the **Multi-stage incident involving Initial access & Persistence on one endpoint**.
+
 1. From the left menu bar, choose **Incidents & Alerts (1)**, then click on **Alerts (2)** to view all generated alerts. You can select any of the alerts to check the details.
 
     ![Picture 1](../Media/alerts.png)

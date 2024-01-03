@@ -54,7 +54,7 @@ In this lab, you will perform the following:
 
 1. On the **Configure Payload** page, enter the following information:
 
-	- From name: **ODL_User <inject key="DeploymentID" enableCopy="false"/>**
+	- From name: **ODL_User <inject key="DeploymentID" enableCopy="false"></inject>**
 	- From email: **<inject key="AzureAdUserEmail"></inject>**
 	- Email subject: **Free toy giveaway promotion from Tailspin Toys**
 	- Select a URL you want to be your phishing link: select the **Select URL** button, which opens a pane of predefined phishing link URLs; select **https://www.prizegives.com** from the list of fictitious URLs (to quickly find this URL, type **prizegives** and press enter in the Search box). and then select **Confirm** 
@@ -96,9 +96,9 @@ In this lab, you will perform the following:
 
 1. On the **Target Users** page, verify the **Include only specific users and groups** option is selected (if not, select it now), and then select **+ Add Users**. 
 
-1. In the **Add Users** pane that appears, in the **Search for Users or Groups** field at the top of the pane, type **ODL_User <inject key="DeploymentID" enableCopy="false"/>** and then hit Enter. In the list of users that appears select **ODL_User <inject key="DeploymentID" enableCopy="false"/>** and then select **Add 1 User(s)**.
+1. In the **Add Users** pane that appears, in the **Search for Users or Groups** field at the top of the pane, type **ODL_User <inject key="DeploymentID" enableCopy="false"></inject>** and then hit Enter. In the list of users that appears select **ODL_User <inject key="DeploymentID" enableCopy="false"></inject>** and then select **Add 1 User(s)**.
 
-1. On the **Target Users** page, **ODL_User <inject key="DeploymentID" enableCopy="false"/>** should be displayed as the targeted user. Select **Next** and then select **Next** again on the **Exclude users** page. 
+1. On the **Target Users** page, **ODL_User <inject key="DeploymentID" enableCopy="false"></inject>** should be displayed as the targeted user. Select **Next** and then select **Next** again on the **Exclude users** page. 
 
 1. On the **Assign Training** page, under the **Preferences** section, the **Assign training for me (Recommended)** option should be selected by default (if not, select it now). Select the **Due Date** field. In the drop-down menu that appears, select **7 days after Simulation ends** and then select **Next**.
 

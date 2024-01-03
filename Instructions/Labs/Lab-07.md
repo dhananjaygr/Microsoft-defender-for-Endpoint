@@ -50,7 +50,7 @@ In this lab, you will perform the following:
 
     - Email address: <inject key="AzureAdUserEmail"></inject>
     - First name: odl
-    - Last name: user <inject key="DeploymentID" enableCopy="false"/></inject>
+    - Last name: user <inject key="DeploymentID" enableCopy="false"></inject>
 
         ![Picture 1](../Media/install-simulator.png)
 
@@ -76,9 +76,9 @@ In this lab, you will perform the following:
 
     ![Picture 1](../Media/add-machine-eval-lab-new.png)
 
-1. Device setup begins. This may take more than 2-3 hours. 
+1. Device setup is starting. This process may take more than 2-3 hours, so please wait for it to complete. Afterward, try refreshing the page.
 
-    >**Note:** You can move on to the next tasks; you can come back after 2-3 hours and check.
+    >**Note:** 
 
 1. See the status of test devices, the risk and exposure levels, and the status of simulator installations by selecting the Devices tab.
 

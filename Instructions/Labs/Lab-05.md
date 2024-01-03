@@ -204,7 +204,7 @@ In this lab, you will perform the following:
 
     ![Picture 1](../Media/blockedcontent1.png)
 
-    >**Note:** If the output does not appear as expected, please be patient and wait for some time; it should eventually match your expectations.
+    >**Note:** If the output does not appear as expected, please be patient. You can move on to the next exercises. Check this after 2-3 hours; it can take more than 24 hours also. It should eventually match your expectations.
 
 ### Task 4: Explore Automatic Investigation and response (AIR) 
 
