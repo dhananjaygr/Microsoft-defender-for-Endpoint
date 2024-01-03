@@ -25,7 +25,7 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/arch-1.1.PNG)
+  ![Picture 1](../Media/arch-1.1.png)
 
 ### Task 1: Setup Defender for Endpoint  
 
