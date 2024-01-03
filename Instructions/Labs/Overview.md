@@ -58,7 +58,7 @@ Using this environment, You'll be able to explore complete features and offering
 
 - You have been given a quota of **$83 USD** which includes the running cost of Pre-deployed resources, license cost, and other resources deployed while running through the lab.
 
-  You will receive **cost alerts** to your registered email address at **50%/75%/90%/95%/100%** of the allotted Azure Credit is spent.
+  You will receive **cost alerts** at 50%, 75%, 90%, 95%, and 100% of the allotted Azure Credit being spent, sent to your registered email address.
 
   You can visit the Azure Subscription page to check the current Azure credit spend and Analysis on **Cost analysis** tab under the Cost Management option.
 
@@ -68,14 +68,14 @@ Using this environment, You'll be able to explore complete features and offering
 
 - The sandbox environment will be active for **30 days/730** hours from the time of registration. 
 - The allowed uptime of the virtual machine is **40 hours**.
-- The virtual machines will automatically **shut down** if not in use or if virtual machines are left idle. This feature is enabled in virtual machines to minimize the Azure spend.
+- Virtual machines will automatically **shut down** when not in use or if left idle. This feature is enabled in virtual machines to minimize the Azure spend.
 - when 100% of Azure credits are spent, the sandbox environment will get automatically deleted without any prior notification. To retain the environment for a longer period and to get the most out of the environment, please follow the best practices mentioned below.
 
 #### **Best practices**: 
 
 - **Resources usage**: Please stop the virtual machines and other resources when not in use in order to minimize the Azure spend.
 
-- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription oftenly in check the Azure spend so that enviornment for a longer duration of time.
+- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription oftenly to check the Azure spend so that enviornment for a longer duration of time.
 
 - **Alert notifications**: Make sure to check your registered email's inbox for any alert-related mails. Alerts give you can head start to keep your Azure spending in control and to plan out the remaining credits in the best way possible.
 ## Lab guide Content:

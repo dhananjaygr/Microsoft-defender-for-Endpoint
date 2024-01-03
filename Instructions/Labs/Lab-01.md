@@ -47,9 +47,10 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
     ![Picture 1](../Media/devicediscovery.png)
 
-    >**Note:** If you do not see the **Device discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try are to refresh the page, wait for 20-25 minutes or open the page InPrivate. Login again with the **Tenant Email** credentials.
+    >**Note:** If you do not see the **Device Discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and choose **Sign Out**. Other options to consider are refreshing the page, waiting for 20-25 minutes, or opening the page in private mode (InPrivate). Afterward, log in again using the **Tenant Email** credentials.
 
 1. In the Discovery setup make sure **Standard discovery (recommended)** is selected. 
+    
     >**Hint:** If you do not see the option, refresh the page.
 
     
@@ -57,15 +58,19 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 In this task, you will configure roles for use with device groups.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Open a new tab, and browse to the [Azure portal](https://portal.azure.com).
 
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+1. In the **Sign in** dialog box, copy and paste Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
 1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
-1. In the Search bar of the Azure portal, type **Microsoft Entra ID**, then select Microsoft Entra ID.
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Entra ID (1)**, and then select **Microsoft Entra ID (2)**.
+
+    ![Picture 1](../Media/microsoftentra.png)
 
 1. Select **Groups** and then click on **New group**.
 
@@ -77,30 +82,36 @@ In this task, you will configure roles for use with device groups.
     |Group Name| **Sg-IT** |
     |Microsoft Entra roles can be assigned to the group| **Yes** |
 
-1. Click on **No owners selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **select**.
+1. Under **Owners** section, click on **No owners selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **select**.
 
-1. Click on **No members selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **select**.
+1. Under **Members** section, click on **No members selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **select**.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
 1. Select **Create** and click on **Yes**. 
 
-1. In the Microsoft Defender portal select **Settings** from the left menu bar, then select **Endpoints**. 
+1. On the **Groups | All groups** page, if you are not able to see the group that you created, **Refresh (1)** the page.
 
-1. Select **Roles** under the permissions area.
+    ![Picture 1](../Media/refresh.png)
+
+1. Navigate back to the **Settings-Microsoft Defender** tab. In the Microsoft Defender portal select **Settings** from the left menu bar, then select **Endpoints**. 
+
+1. Select **Roles (1)** under the permissions.
 
 1. Select the **Turn on roles** button.
 
-1. Select **+ Add Role**. by clicking three dots
+1. Select **+ Add Role (2)**.
 
-1. In the Add role dialog enter the following:
+    ![Picture 1](../Media/addrole.png)
+
+1. In the Add role dialog enter the following, and select **Next**:
 
     |General setting|Value|
     |---|---|
     |Role name|**Tier 1 Support**|
-    |Permissions|Live Response capabilities - Advanced|
+    |Permissions|**Live Response capabilities** > **Advanced**|
 
-1. Select the **Assigned user groups** by click on next. Select **sg-IT** and then select **Add selected groups**. Make sure it appears under *Azure AD user groups with this role*.
+1. On the **Add role** page, select **sg-IT** and then select **Add selected groups**. Make sure it appears under **Azure AD user groups with this role**.
 
 1. Select **Submit** and Done. If you receive an error while saving the role, refresh the page and try again.
 
@@ -108,18 +119,20 @@ In this task, you will configure roles for use with device groups.
 
 In this task, you will configure device groups that allow for access control and automation configuration.
 
-1. In the Microsoft Defender portal select **Settings** from the left menu bar, then select **Endpoints**. 
+1. In the Microsoft Defender portal select **Settings (1)** from the left menu bar, then select **Endpoints**. 
 
-1. Select **Device groups** under the permissions area.
+1. Select **Device groups (2)** under the permissions area.
 
-1. Select **+ Add device group** icon.
+1. Select **+ Add device group (3)** icon.
+
+    ![Picture 1](../Media/devicegroup.png)    
 
 1. Enter the following information on the General tab:
 
     |General setting|Value|
     |---|---|
     |Device group name|**Regular**|
-    |ReMediation level| Full-ReMediate threats automatically|
+    |Remediation level| **Full-Remediate threats automatically**|
 
 1. Select **Next**.
 
@@ -135,13 +148,15 @@ In this task, you will configure device groups that allow for access control and
 
 1. Device group configuration has changed. Select **Apply changes** to check matches and recalculate groupings.
 
-1. You are going to have two device groups now; the **Regular** you just created and the **Ungrouped devices (default)** with the same reMediation level.
+1. You are going to have two device groups now; the **Regular** you just created and the **Ungrouped devices (default)** with the same remediation level.
+
+    ![Picture 1](../Media/devicegroups1.png) 
 
 ### Task 4: Create Baseline Policies
 
 The Windows Intune security baseline provides a comprehensive set of recommended settings needed to securely configure devices running Windows, including browser settings, PowerShell settings, and settings for some security features like Microsoft Defender Antivirus.
 
-1. Open another tab and browse to the [Microsoft Intune admin center](intune.microsoft.com).
+1. Open another tab and browse to the [Microsoft Intune admin center](https://intune.microsoft.com/?ref=AdminCenter#home).
 
 1. From the left navigation pane, select **Endpoint security(1)**, under **Overview** section, select **Security Baselines (2)**.
 
@@ -149,7 +164,7 @@ The Windows Intune security baseline provides a comprehensive set of recommended
 
     ![Picture 1](../Media/securitybaseline.png)
 
-1. On the **MDM Security Baseline | Profiles** page, select **Create profile**.
+1. On the **MDM Security Baseline | Profiles** page, select **+ Create profile**.
 
     ![Picture 1](../Media/createprofile(1).png)
 
@@ -165,7 +180,7 @@ The Windows Intune security baseline provides a comprehensive set of recommended
 
 1. On the **Review + create** page, select **Create**.
 
-1. After the policy is created, you will be able to view it in the **MDM Security Baseline | Profiles section**.
+1. After the policy is created, you will be able to view it in the **MDM Security Baseline | Profiles** section.
 
     ![Picture 1](../Media/securitybaseline1.png)
 

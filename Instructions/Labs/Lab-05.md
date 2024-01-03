@@ -32,11 +32,15 @@ In this lab, you will perform the following:
 
 ### Task 1: Create Attack Surface Reduction Rules 
 
-1. Open the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Open a new tab, and browse to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-1. From the left-navigation menu select, **Endpoint Security**. On the **Endpoint security | Overview** page, from the left-navigation menu select **Attack surface reduction**.
+1. From the left-navigation menu select, **Endpoint Security (1)**. On the **Endpoint security | Overview** page, from the left-navigation menu under **Manage** section, select **Attack surface reduction (2)**.
 
-1. Select **+ Create Policy**.
+    ![Picture 1](../Media/attacksurface.png)
+
+1. On the **Endpoint security | Attack surface reduction**, select **+ Create Policy**.
+
+    ![Picture 1](../Media/createpolicy.png)
 
 1. On **Create a profile** page, under **Platform** select **Windows 10, Windows 11, and Windows Server (1)**, and in **Profile**, select **Attack surface reduction rules (2)**.
 
@@ -44,7 +48,7 @@ In this lab, you will perform the following:
 
 1. Select **Create**.
 
-1. In the Basics tab of the **Create profile** pane, in **Name** add a name for your policy. In **Description** add a description for your ASR rules policy.
+1. In the Basics tab of the **Create profile** pane, in **Name** add a name for your policy. In **Description** add a description for your ASR rules policy, and select **Next**.
 
 1. In the **Configuration settings** tab, under **Attack Surface Reduction Rules**, follow these instructions, and select **Next**:
 
@@ -73,7 +77,7 @@ In this lab, you will perform the following:
 
     >**Note:** you can add tag information to specific devices. You can also use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Learn more: Use role-based access control (RBAC) and scope tags for distributed IT in Intune.
 
-1. In the **Assignments** pane, you can deploy or "assign" the profile to your user or device groups. Under **Included groups** select **Add groups** and selct the **Sg-IT** group that you created in Lab-01, select **Next**.
+1. In the **Assignments** pane, you can deploy or "assign" the profile to your user or device groups. Under **Included groups** select **Add groups** and choose the **Sg-IT** group that you created in Lab-01, choose **Select**, and select **Next**.
 
 1. Now, review your settings in the **Review + create** pane. Click **Create** to apply the rules.
 
@@ -83,7 +87,7 @@ In this lab, you will perform the following:
 
 ### Task 2: Configure Web Content Filtering
 
-1. Open [Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) portal and sign in.
+1. Navigate to the [Microsoft Defender Portal](https://go.microsoft.com/fwlink/p/?linkid=2077139).
 
 1. In the navigation pane, select **Settings > Endpoints > General > Advanced Features**.
 
@@ -93,19 +97,19 @@ In this lab, you will perform the following:
 
     >**Note:** If it is On, the toggle button will not be visible to you; you can move on to the next step.
 
-1. Open another tab, and open [Microsoft Intune Admin Center](https://intune.microsoft.com/#home).
+1. Now navigate back to the [Microsoft Intune Admin Center](https://intune.microsoft.com/#home) page.
 
 1. From the left navigation pane, select **Endpoint security (1)**. On **Endpoint security | Overview** page, from the left navigation menu select **Antivirus (2)**.
 
     ![Picture 1](../Media/endpoint-security.png)
 
-1. Select **+ Create Policy**. On **Create a profile** page, select **Windows 10, Windows 11 and Windows Server (1)**, under **Platform**, and select **Microsoft Defender Antivirus (2)** under **Profile**. Select **Create**.
+1. Select **+ Create Policy**. On **Create a profile** page, select **Windows 10, Windows 11 and Windows Server (1)**, under **Platform**, and select **Microsoft Defender Antivirus (2)** under **Profile**. Select **Create (3)**.
 
     ![Picture 1](../Media/createaprofile.png)
 
 1. On **Create profile** page, give the name of your choice, and select **Next**.
 
-1. In **Configuration settings**, enabling network protection and choice **Audit mode (6)** for testing the feature, and select **Next (8)**.
+1. In **Configuration settings**, follow the instructions provided in the screenshots, and then select **Next (8)**.
 
     ![Picture 1](../Media/configurationsetting1.png)
 
@@ -115,7 +119,17 @@ In this lab, you will perform the following:
 
     ![Picture 1](../Media/confidential1.png)
 
-1. Inside your Lab-VM, in **Type here to search** search for **Windows PowerShell**, right-click on it and Select **Run as administrator**. Run these commands to enable block mode and audit mode.
+1. Keep everything as default in **Scope tags** page, and select **Next**.
+
+1. On the **Assignments** page, under **Included groups**, select **Add groups**. On **Select groups to include** page, choose **Sg-IT**, and choose **Select**. Select **Next**.
+
+1. On the **Review + create** page, review all informations and select **Create**.
+
+1. Once the antivirus policy is created, it will appear under **AV policies**.
+
+    ![Picture 1](../Media/antivirus.png)
+
+1. Inside your Lab-VM, in **Type here to search** search for **Windows PowerShell**, right-click on it and select **Run as administrator**. Run these commands to enable block mode and audit mode.
 
     ```powershell
     Set-MpPreference -EnableNetworkProtection Enabled
@@ -124,8 +138,11 @@ In this lab, you will perform the following:
     ```powershell
     Set-MpPreference -EnableNetworkProtection AuditMode
     ```
+1. Close the **Windows PowerShell**.
 
-1. Now, navigate back to the Microsoft Defender portal, choose **Settings > Endpoints > Web content filtering > + Add policy**.
+1. Now, navigate back to the Microsoft Defender portal, choose **Settings (1) > Endpoints > Web content filtering (2) > + Add policy (3)**.
+
+    ![Picture 1](../Media/endpoints.png)
 
 1. On the **Add Policy** page, under **General Details**, provide a **Policy name (1)** of your choice, and select **Next (2)**.
 
@@ -175,6 +192,8 @@ In this lab, you will perform the following:
 
     ![Picture 1](../Media/addpolicy.png)
 
+1. On the **Web content filtering** page, you can see the policy you created. If it is not visible, refresh the page, and it will appear.
+
 ### Task 3: Testing Web Content Filtering policy
 
 1. Open an In-private browsing window and visit the following URLs: **store.steampowered.com** and **roundcube.net**.
@@ -195,7 +214,7 @@ In this lab, you will perform the following:
 
 1. On **Add device group** page, Create at least one device group, as follows:
 
-    - Specify a **name** and **description** for the device group.
+    - Specify a **Device group name** and **description** for the device group.
     - In the Automation level list, select a level, such as **Full - remediate threats automatically**. The automation level determines whether remediation actions are taken automatically, or only upon approval. To learn more, see Automation levels in automated investigation and remediation, and select **Next**.
     - On the **Devices** category, under the **OS** status, choose the **Value** drop-down menu, and opt for **Windows Server 2019 (1)** from the available options. Select **Next (2)**.
 
@@ -232,6 +251,8 @@ In this lab, you will perform the following:
         ![Picture 1](../Media/actioncenter.png)
 
 1. Review the items on the **Pending** tab.
+
+    >**Note:** If nothing is shown under the 'Pending' tab, don't worry; it means nothing is pending from your side. You can proceed to step 15.
 
 1. Select an action to open its flyout pane.
 
