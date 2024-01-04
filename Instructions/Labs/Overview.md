@@ -46,7 +46,7 @@ Using this environment, You'll be able to explore complete features and offering
 
 - 2 *Windows Server 2019 Datacenter* Virtual machines, virtual machine-related resources like Virtual networks, Network security groups, managed disks, Network interface cards, and IP addresses are deployed as part of the automation.
 
-  You are recommended to use the same virtual machine throughout the lab for the best experience through out the lab.
+  These virtual machines are tailored and configured to the sandbox's specifications. Files, applications, packages, and OS configurations are all pre-configured. It is recommended that you use the same virtual machine throughout the lab for the best experience.
 
 #### **License and subscription**: 
 
@@ -62,13 +62,13 @@ Using this environment, You'll be able to explore complete features and offering
 
   You can visit the Azure Subscription page to check the current Azure credit spend and Analysis on **Cost analysis** tab under the Cost Management option.
 
-  ![Picture 1](../media/o1.jpg)
+  ![Picture 1](/Instructions/Media/o1.jpg)
 
 #### **Duration and Deletion of sandbox**:  
 
 - The sandbox environment will be active for **30 days/730** hours from the time of registration. 
-- The allowed uptime of the virtual machine is **40 hours**.
-- Virtual machines will automatically **shut down** when not in use or if left idle. This feature is enabled in virtual machines to minimize the Azure spend.
+- The maximum allowed virtual machine uptime is only **40 hours**. It is recommended to deallocate the virtual machine when not in use.
+- The virtual machine is set up with a custom feature called Idle start/stop. This custom package will check the virtual machine's idleness every **2 hours/120 minutes**. If the virtual machine is left idle for over 2 hours, a pop-up window will appear, prompting you to respond. If you do not take action within 10 minutes, the virtual machine will shut down automatically. This feature is enabled in virtual machines to optimize Azure costs.
 - when 100% of Azure credits are spent, the sandbox environment will get automatically deleted without any prior notification. To retain the environment for a longer period and to get the most out of the environment, please follow the best practices mentioned below.
 
 #### **Best practices**: 
@@ -80,7 +80,9 @@ Using this environment, You'll be able to explore complete features and offering
 - **Alert notifications**: Make sure to check your registered email's inbox for any alert-related mails. Alerts give you can head start to keep your Azure spending in control and to plan out the remaining credits in the best way possible.
 ## Lab guide Content:
 
-You will have access to a lab guide which is a reference material to assist you in getting started with the exploration. You are encouraged to explore Microsoft Defender for Endpoint further based on your interests and preferences.
+You will have access to a lab guide which is a reference material to assist you in getting started with the exploration.
+
+Based on your interests, you can use this lab guide as a reference to learn and test any Microsoft Defender for Endpoint feature. You are also encouraged to explore additional features of Microsoft Defender for Endpoint based on your interests and preferences.
 
 - Lab 01 - Implement Microsoft Defender for Endpoint
 - Lab 02 - Onboard Machines
