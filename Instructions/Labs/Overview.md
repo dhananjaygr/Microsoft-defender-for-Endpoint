@@ -79,9 +79,10 @@ Using this environment, you'll be able to explore complete features and offering
 
 ## Lab guide Content:
 
-You will have access to a lab guide which is a reference material to assist you in getting started with the exploration.
+You will have access to a lab guide which is a reference material to assist you in getting started with the exploration. 
 
-Based on your interests, you can use this lab guide as a reference to learn and test any Microsoft Defender for Endpoint feature. You are also encouraged to explore additional features of Microsoft Defender for Endpoint based on your interests and preferences.
+Based on your interests, you can use this lab guide as a reference to learn and test any Microsoft Sentinel feature.  You are also encouraged to explore additional features of Microsoft Defender for Endpoint based on your interests and preferences.
+
 
 - Lab 01 - Implement Microsoft Defender for Endpoint
 - Lab 02 - Onboard Machines
