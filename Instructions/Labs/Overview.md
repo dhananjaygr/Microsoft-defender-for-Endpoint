@@ -60,7 +60,7 @@ Using this environment, you'll be able to explore complete features and offering
 
   You can visit the Azure Subscription page to check the current Azure credit spend and Analysis on **Cost analysis** tab under the Cost Management option.
 
-  ![Picture 1](../media/o1.jpg)
+  ![Picture 1](/Instructions/Media/o1.jpg)
 
 #### **Duration and Deletion of sandbox**:  
 
@@ -79,7 +79,7 @@ Using this environment, you'll be able to explore complete features and offering
 
 ## Lab guide Content:
 
-You will have access to a lab guide which is a reference material to assist you in getting started with the exploration. 
+You will have access to a lab guide which is a reference material to assist you in getting started with the exploration.
 
 Based on your interests, you can use this lab guide as a reference to learn and test any Microsoft Defender for Endpoint feature. You are also encouraged to explore additional features of Microsoft Defender for Endpoint based on your interests and preferences.
 
