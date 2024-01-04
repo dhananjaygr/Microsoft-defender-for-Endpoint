@@ -175,7 +175,7 @@ When you investigate an incident, you'll see:
 
         >**Note:** Go back to the **Assets** tab page.
         
-        -**Users**:- 
+        - **Users**:- 
             
         - The Users view lists all the users that have been identified to be part of or related to the incident. Here's an example.
 
