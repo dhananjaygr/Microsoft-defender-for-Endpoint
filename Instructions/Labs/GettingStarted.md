@@ -8,7 +8,7 @@
 
     ![](../Media/intro-2.png)
 
-1. You can start, stop, and restart virtual machines from the **Resources** tab.
+1. You can start, deallocate, and restart virtual machines from the **Resources** tab.
 
    ![](../Media/intro-3.png)
 

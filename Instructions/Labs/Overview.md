@@ -32,13 +32,11 @@ Microsoft Defender for Endpoint integrates seamlessly with the Microsoft 365 Sec
 
 
 ## Sandbox Scenario
-Contoso is a global organization with a complex IT infrastructure that includes a combination of on-premises data centers and cloud-based resources. They are looking to enhance their security posture by deploying Azure Sentinel, Microsoft's cloud-native security information and event management (SIEM), and security orchestration automation and response (SOAR) solution. Additionally, Contoso aims to onboard its cloud resources and servers to Azure Sentinel to gain better visibility and proactive threat detection and response capabilities.
-
-By implementing a robust log analytics and threat detection program, Contoso aims to proactively identify and mitigate threats, reduce the risk of security breaches, and maintain a strong security posture in an ever-evolving threat landscape. This approach will enable Contoso to stay ahead of potential threats and protect its digital assets effectively.
+Contoso Corporation, strategically implements Defender for Endpoint, which provides visibility into devices in your environment, offers vulnerability management to help you better understand your cyberattack surface, and delivers endpoint protection, endpoint detection and response (EDR), mobile cyberthreat protection, and managed hunting in a single platform.
 
 ## About the Sandbox
 
-Using this environment, You'll be able to explore complete features and offerings offered by Microsoft Sentinel. Please find the detailed overview of the sandbox environment below.
+Using this environment, you'll be able to explore complete features and offerings offered by Microsoft Defender for Endpoint. Please find the detailed overview of the sandbox environment below.
 
 ### Pre-provisioned resources
 
@@ -46,7 +44,7 @@ Using this environment, You'll be able to explore complete features and offering
 
 - 2 *Windows Server 2019 Datacenter* Virtual machines, virtual machine-related resources like Virtual networks, Network security groups, managed disks, Network interface cards, and IP addresses are deployed as part of the automation.
 
-  You are recommended to use the same virtual machine throughout the lab for the best experience through out the lab.
+  These virtual machines are tailored and configured to the sandbox's specifications. Files, applications, packages, and OS configurations are all pre-configured. It is recommended that you use the same virtual machine throughout the lab for the best experience.
 
 #### **License and subscription**: 
 
@@ -56,9 +54,9 @@ Using this environment, You'll be able to explore complete features and offering
 
 #### **Azure Credits**: 
 
-- You have been given a quota of **$83 USD** which includes the running cost of Pre-deployed resources, license cost, and other resources deployed while running through the lab.
+- You have been given a quota of **$83** which includes the running cost of Pre-deployed resources, license cost, and other resources deployed while running through the lab.
 
-  You will receive **cost alerts** at 50%, 75%, 90%, 95%, and 100% of the allotted Azure Credit being spent, sent to your registered email address.
+  You will receive **cost alerts** to your registered email address at **50%/75%/90%/95%/100%** of the allotted Azure Credit is spent.
 
   You can visit the Azure Subscription page to check the current Azure credit spend and Analysis on **Cost analysis** tab under the Cost Management option.
 
@@ -67,20 +65,23 @@ Using this environment, You'll be able to explore complete features and offering
 #### **Duration and Deletion of sandbox**:  
 
 - The sandbox environment will be active for **30 days/730** hours from the time of registration. 
-- The allowed uptime of the virtual machine is **40 hours**.
-- Virtual machines will automatically **shut down** when not in use or if left idle. This feature is enabled in virtual machines to minimize the Azure spend.
+- The maximum allowed virtual machine uptime is only **40 hours**. It is recommended to deallocate the virtual machine when not in use.
+- The virtual machine is set up with a custom feature called Idle start/stop. This custom package will check the virtual machine's idleness every **2 hours/120 minutes**. If the virtual machine is left idle for over 2 hours, a pop-up window will appear, prompting you to respond. If you do not take action within 10 minutes, the virtual machine will shut down automatically.  This feature is enabled in virtual machines to optimize Azure costs.
 - when 100% of Azure credits are spent, the sandbox environment will get automatically deleted without any prior notification. To retain the environment for a longer period and to get the most out of the environment, please follow the best practices mentioned below.
 
 #### **Best practices**: 
 
-- **Resources usage**: Please stop the virtual machines and other resources when not in use in order to minimize the Azure spend.
+- **Resources usage**: Please stop the virtual machines and other resources when not in use to minimize the Azure spend.
 
-- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription oftenly to check the Azure spend so that enviornment for a longer duration of time.
+- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription often in check the Azure spending so that the environment can be retained for a longer duration of time.
 
 - **Alert notifications**: Make sure to check your registered email's inbox for any alert-related mails. Alerts give you can head start to keep your Azure spending in control and to plan out the remaining credits in the best way possible.
+
 ## Lab guide Content:
 
-You will have access to a lab guide which is a reference material to assist you in getting started with the exploration. You are encouraged to explore Microsoft Defender for Endpoint further based on your interests and preferences.
+You will have access to a lab guide which is a reference material to assist you in getting started with the exploration. 
+
+Based on your interests, you can use this lab guide as a reference to learn and test any Microsoft Defender for Endpoint feature. You are also encouraged to explore additional features of Microsoft Defender for Endpoint based on your interests and preferences.
 
 - Lab 01 - Implement Microsoft Defender for Endpoint
 - Lab 02 - Onboard Machines
@@ -92,8 +93,5 @@ You will have access to a lab guide which is a reference material to assist you 
 
 ### Azure services and related products
 
-- Log Analytics Workspace
-- Microsoft Defender for Cloud
 - Microsoft Defender for Endpoint
 - Microsoft Entra ID
-- Microsoft Sentinel
