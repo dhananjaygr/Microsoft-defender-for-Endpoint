@@ -87,6 +87,8 @@ In this lab, you will perform the following:
 
 ### Task 2: Configure Web Content Filtering
 
+Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you'll gather access statistics to help create a more custom policy decision. Your users will see a block notification if an element on the page they're viewing is making calls to a blocked resource.
+
 1. Navigate to the [Microsoft Defender Portal](https://go.microsoft.com/fwlink/p/?linkid=2077139).
 
 1. In the navigation pane, select **Settings > Endpoints > General > Advanced Features**.
@@ -196,6 +198,12 @@ In this lab, you will perform the following:
 
 ### Task 3: Testing Web Content Filtering policy
 
+A "Testing Web Content Filtering policy" typically refers to the process of evaluating or assessing the effectiveness of a web content filtering policy. Web content filtering policies are established to control and restrict access to certain types of content on the internet, usually based on categories such as explicit content, malware, or social media.
+
+When testing a web content filtering policy, the goal is to verify whether the policy accurately blocks or allows access to the intended categories of content. This testing process helps ensure that the web content filtering system is configured correctly and provides the desired level of security.
+
+Testing may involve accessing websites or content that fall within specific categories to check if the filtering policy is correctly identifying and handling them. It's a crucial step in maintaining a secure and controlled internet environment within an organization or network. Regular testing and updates to the filtering policy are essential to adapt to evolving online threats and changes in web content.
+
 1. Open an In-private browsing window and visit the following URLs: **store.steampowered.com** and **roundcube.net**.
 
 1. View the results, which indicate that network protection is enabled, and web content filtering is set to block the '**games**' category and **web-based mail**.
@@ -204,7 +212,7 @@ In this lab, you will perform the following:
 
     ![Picture 1](../Media/blockedcontent1.png)
 
-    >**Note:** If the output does not appear as expected, please be patient. You can move on to the next exercises. Check this after 2-3 hours; it can take more than 24 hours also. It should eventually match your expectations.
+    >**Note:** If the output does not appear as expected, please be patient. You can move on to the next exercises. It might take more than 24 hours. Check it after 2-3 hours. If it doesn't appear within that time frame, then check again after 24 hours.
 
 ### Task 4: Explore Automatic Investigation and response (AIR) 
 

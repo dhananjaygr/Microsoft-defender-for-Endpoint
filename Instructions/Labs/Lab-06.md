@@ -27,6 +27,8 @@ In this lab, you will perform the following:
 
 ### Task 1: Configure and launch a Drive-by URL attack 
 
+These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line.
+
 1. If you are not already at the Microsoft Defender portal in your browser, start the Microsoft Edge browser go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
 
 1. In the **Microsoft Defender** portal, from the left-hand navigation pane, under the **Email & collaboration** section, select **Attack simulation training**.
@@ -36,6 +38,22 @@ In this lab, you will perform the following:
 1. On the **Select Technique** page in the **Simulation** wizard, scroll down and select the **Drive-by URL (1)** option. Under this option, select the **View details of Drive-by URL** link. This opens a **Drive-by URL** pane on the right. Review the **Description** and the **Simulation steps** for this type of attack. When you're done, close the **Drive-by URL** pane and select **Next (2)**.
 
 	![Picture 1](../Media/simulation(1).png)
+
+	>**Note:** **View details** opens a details flyout that describes the technique and the simulation steps resulting from the technique.
+	
+	>**Important:** There are many techniques that are available. If you want to explore these techniques, you can select any one of them. However, in this lab, we will focus on **Drive-by URL**:
+	
+	- **Credential Harvest**: An attacker sends the recipient a message that contains a URL. When the recipient clicks on the URL, they're taken to a website that typically shows a dialog box that asks the user for their username and password. Typically, the destination page is themed to represent a well-known website in order to build trust in the user.
+	
+	- **Malware Attachment**: An attacker sends the recipient a message that contains an attachment. When the recipient opens the attachment, arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
+
+	- **Link in Attachment**: This technique is a hybrid of a credential harvest. An attacker sends the recipient a message that contains a URL inside of an attachment. When the recipient opens the attachment and clicks on the URL, they're taken to a website that typically shows a dialog box that asks the user for their username and password. Typically, the destination page is themed to represent a well-known website in order to build trust in the user.
+
+	- **Link to Malware**: An attacker sends the recipient a message that contains a link to an attachment on a well-known file sharing site (for example, SharePoint Online or Dropbox). When the recipient clicks on the URL, the attachment opens, and arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
+
+	- **Drive-by URL**: An attacker sends the recipient a message that contains a URL. When the recipient clicks on the URL, they're taken to a website that tries to run background code. This background code attempts to gather information about the recipient or deploy arbitrary code on their device. Typically, the destination website is a well-known website that has been compromised or a clone of a well-known website. Familiarity with the website helps convince the user that the link is safe to click. This technique is also known as a watering hole attack.
+
+	- **OAuth Consent Grant**: An attacker creates a malicious Azure Application that seeks to gain access to data. The application sends an email request that contains a URL. When the recipient clicks on the URL, the consent grant mechanism of the application asks for access to the data (for example, the user's Inbox).
 
 1. On the **Name Simulation** page, enter **Custom payload** in the **Simulation name** field and then select **Next**.
 
