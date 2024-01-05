@@ -129,15 +129,15 @@ When you investigate an incident, you'll see:
 
 1. Here are the detailed information of the tabs:
 
-- **Attack story**:- 
+    - **Attack story**:- 
 
     - Attack stories help you to quickly review, investigate, and remediate attacks while viewing the full story of the attack on the same tab. It also allows you to review the entity details and take remediation actions, such as deleting a file or isolating a device without losing context. Within the attack story you can find the alert page and the incident graph. The incident alert page has these sections:- Alert story, which includes: What happened, Actions taken, Related events, and Alert properties in the right pane (state, details, description, and others).
     
         >**Note:** Note that not every alert will have all of the listed subsections in the Alert story section.
 
-    ![Picture 1](../Media/attackstory.png)
+        ![Picture 1](../Media/attackstory.png)
 
-- **Alert**:- 
+    - **Alert**:- 
 
     - On the Alerts tab, you can view the alert queue for alerts related to the incident and other information about them such as:
 
@@ -153,7 +153,7 @@ When you investigate an incident, you'll see:
 
                 ![Picture 1](../Media/alerts2.png)
 
-- **Assets**:- 
+    - **Assets**:- 
 
     - Easily view and manage all your assets in one place with the new **Assets** tab. This unified view includes Devices, Users, Mailboxes and Apps.
 
@@ -191,7 +191,7 @@ When you investigate an incident, you'll see:
 
         - The Apps view lists all the apps identified to be part of or related to the incident. Here's an example.
 
-- **Investigations**:- 
+    - **Investigations**:- 
 
     - The **Investigations** tab lists all the automated investigations triggered by alerts in this incident. Automated investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Defender for Endpoint and Defender for Office 365.
 
@@ -207,9 +207,9 @@ When you investigate an incident, you'll see:
 
     - The investigation graph helps you quickly understand the full scope of the attack by connecting the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes.
 
-    >**Note:** Go back to the **Investigations** tab, page.
+        >**Note:** Go back to the **Investigations** tab, page.
 
-- **Evidence and Response**:- 
+    - **Evidence and Response**:- 
 
     - The Evidence and Response tab shows all the supported events and suspicious entities in the alerts in the incident. Here's an example.
 
@@ -231,13 +231,13 @@ When you investigate an incident, you'll see:
 
 1. - The **Overview (1)** tab provides the same information as the file side pane did. 
 
-- The **Incidents & alerts (2)** tab goes on to show all the alerts associated with this file. 
+    - The **Incidents & alerts (2)** tab goes on to show all the alerts associated with this file. 
 
-- The **Observed in Organization (3)** tab provides even more context. It lists the machine this file has been observed on, and you can even use the interactive timeline to scope it to a date range within the past six months. 
+    - The **Observed in Organization (3)** tab provides even more context. It lists the machine this file has been observed on, and you can even use the interactive timeline to scope it to a date range within the past six months. 
 
-- Last, if you're unsure whether the file is malicious, send it for **Deep analysis (4)**. Select **Submit**, it will submits the file to Microsoft Defender for Endpoint for detonation and observation, with detailed results provided in a report.
+    - Last, if you're unsure whether the file is malicious, send it for **Deep analysis (4)**. Select **Submit**, it will submits the file to Microsoft Defender for Endpoint for detonation and observation, with detailed results provided in a report.
 
-    >**Note:** If the file is malicious, select **Stop and Quarantine File**, it will display the pop-up of the **Stop and Quarantine File**, provide a comment and select **Confirm**.
+        >**Note:** If the file is malicious, select **Stop and Quarantine File**, it will display the pop-up of the **Stop and Quarantine File**, provide a comment and select **Confirm**.
 
 1. Once, you are satisfied that you have dealt with the incident and addressed the alerts linked to it and taken all required remediation actions, the step is to resolve it. To do that, select **Manage incident**
 
