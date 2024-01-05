@@ -32,6 +32,8 @@ In this lab, you will perform the following:
 
 ### Task 1: Create Attack Surface Reduction Rules 
 
+In this task, create Attack Surface Reduction rules to minimize vulnerabilities and enhance security by blocking unnecessary protocols, restricting lateral movement, and implementing continuous monitoring.
+
 1. Open a new tab, and browse to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 1. From the left-navigation menu select, **Endpoint Security (1)**. On the **Endpoint security | Overview** page, from the left-navigation menu under **Manage** section, select **Attack surface reduction (2)**.
@@ -87,7 +89,7 @@ In this lab, you will perform the following:
 
 ### Task 2: Configure Web Content Filtering
 
-Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you'll gather access statistics to help create a more custom policy decision. Your users will see a block notification if an element on the page they're viewing is making calls to a blocked resource.
+In this task, configure policies across device groups to block specified categories, preventing user access to associated URLs, while automatically auditing non-blocked categories for access statistics, ensuring uninterrupted user access, and notifying users if a page element attempts to call a resource in a blocked category.
 
 1. Navigate to the [Microsoft Defender Portal](https://go.microsoft.com/fwlink/p/?linkid=2077139).
 
@@ -215,6 +217,8 @@ Testing may involve accessing websites or content that fall within specific cate
     >**Note:** If the output does not appear as expected, please be patient. You can move on to the next exercises. It might take more than 24 hours. Check it after 2-3 hours. If it doesn't appear within that time frame, then check again after 24 hours.
 
 ### Task 4: Explore Automatic Investigation and response (AIR) 
+
+In this task, implement Automatic Investigation and Response (AIR): Enhancing cybersecurity through automated tools for swift threat detection and response.
 
 1. Navigate back to the **Microsoft Defender portal**. From the left navigation pane select **Permissions**, under **Endpoints roles and groups**, select **Device groups**.
 

@@ -154,7 +154,7 @@ In this task, you will configure device groups that allow for access control and
 
 ### Task 4: Create Baseline Policies
 
-The Windows Intune security baseline provides a comprehensive set of recommended settings needed to securely configure devices running Windows, including browser settings, PowerShell settings, and settings for some security features like Microsoft Defender Antivirus.
+In this task, your objective is to implement the Windows Intune security baseline, which offers a comprehensive set of recommended settings essential for securely configuring devices running Windows. This includes configuring browser settings, PowerShell configurations, and specific settings for security features such as Microsoft Defender Antivirus.
 
 1. Open another tab and browse to the [Microsoft Intune admin center](https://intune.microsoft.com/?ref=AdminCenter#home).
 

@@ -30,6 +30,8 @@ In this lab, you will perform the following:
 
 ### Task 1: Setup the evaluation lab
 
+In this task, set up the evaluation lab for a succinct testing environment.
+
 1. If you are not already at the Microsoft 365 Defender portal in your Microsoft Edge browser, go to (https://security.microsoft.com). 
 
 1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
@@ -62,9 +64,11 @@ In this lab, you will perform the following:
 
 ### Task 2: Add devices
 
+In this task, add devices to the evaluation lab to enhance security testing and analysis.
+
 1. On the **Your evaluation lab** page, select **Devices** tab.
 
-1. On the **Devices** page, click **+ Add device**, choose **Windows 10** from the **Device type** drop-down, select your preferred tools from **Available Tools**, and then click **Add device**.
+1. On the **Devices** page, click **+ Add device**, choose **Windows Server 2019** from the **Device type** drop-down, select your preferred tools from **Available Tools**, and then click **Add device**.
 
     >**Note:** You can choose to add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu).
 
@@ -76,15 +80,15 @@ In this lab, you will perform the following:
 
     ![Picture 1](../Media/add-machine-eval-lab-new.png)
 
-1. Device setup is starting. This process may take more than 2-3 hours, so please wait for it to complete. Afterward, try refreshing the page.
-
-    >**Note:** 
+    >**Note:** Device setup is underway. This process may exceed 24 hours, so please be patient. After completion, refresh the page. Proceed to the next step only when the status displays **Active**.
 
 1. See the status of test devices, the risk and exposure levels, and the status of simulator installations by selecting the Devices tab.
 
     ![Picture 1](../Media/test-device.png)
 
 ### Task 3: Threat simulator scenarios
+
+In this task, explore Threat Simulator scenarios: Simulated cyber threats for assessing and enhancing security resilience.
 
 1. On the **Overview (1)** page of **Your evaluation lab**, select **Create simulation (2)**.
 

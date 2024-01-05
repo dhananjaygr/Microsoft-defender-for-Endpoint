@@ -24,7 +24,7 @@ In this lab, you will perform the following:
 
 ### Task 1: Overview of Vulnerability Management dashboard
 
-You can use Defender Vulnerability Management dashboard in the Microsoft Defender portal to:
+In this task, you can leverage the Defender Vulnerability Management dashboard in the Microsoft Defender portal to:
 
 - View your exposure score and Microsoft Secure Score for Devices, along with top security recommendations, software vulnerability, remediation activities, and exposed devices.
 - Correlate EDR insights with endpoint vulnerabilities and process them.
@@ -59,7 +59,7 @@ You can use Defender Vulnerability Management dashboard in the Microsoft Defende
 
 ### Task 2: Security recommendations
 
-View recommendations, the number of weaknesses found, related components, threat insights, number of exposed devices, status, remediation type, remediation activities, impact to your exposure score and Secure Score for Devices once the recommendation is implemented, and associated tags.
+In this task, you are required to provide a comprehensive overview of various aspects related to security recommendations. View recommendations, the number of weaknesses found, related components, threat insights, number of exposed devices, status, remediation type, remediation activities, impact to your exposure score and Secure Score for Devices once the recommendation is implemented, and associated tags.
 
 The color of the Exposed devices graph changes as the trend changes. If the number of exposed devices is on the rise, the color changes to red. If there's a decrease in the number of exposed devices, the color of the graph will change to green.
 

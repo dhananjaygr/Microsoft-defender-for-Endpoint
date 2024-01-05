@@ -27,7 +27,7 @@ In this lab, you will perform the following:
 
 ### Task 1: Configure and launch a Drive-by URL attack 
 
-These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line.
+In this task, simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. By proactively simulating various cyber threats and security breaches, you can assess the resilience of your systems and pinpoint potential weaknesses. This proactive approach allows you to strengthen your defenses, implement necessary security measures, and educate your users on best practices, ultimately minimizing the risk of a genuine attack and safeguarding your organization's financial stability.
 
 1. If you are not already at the Microsoft Defender portal in your browser, start the Microsoft Edge browser go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
 
@@ -146,6 +146,8 @@ These simulated attacks can help you identify and find vulnerable users before a
 1. Leave your Edge browser and all tabs open and proceed to the next exercise.
 
 ### Task 2: Validate the simulated Drive-by URL attack
+
+In this task, validate the simulated Drive-by URL attack to assess the vulnerability of your system. This test provides an overview of how well your defenses can withstand a common cyber threat, allowing you to enhance security measures effectively.
 
 1. Open an another tab, and browse to the [Outlook](https://www.microsoft.com/en/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2Fowa%2F&sdf=0), select **Sign in**. If it asks you for the sign-in credentials, then enter these credentials, 
 
