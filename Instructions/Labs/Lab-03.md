@@ -251,7 +251,7 @@ When you investigate an incident, you'll see:
     |------------|---------|
     |Status|**Resolved**|
     |Assign to|**Assign to me**|
-    |Classification|**Select as per your choice**|
+    |Classification|**Select according to your preference**|
     |Comment (Optional)|**Add a comment** as per your choice|
 
 ### Task 3: Live Responses

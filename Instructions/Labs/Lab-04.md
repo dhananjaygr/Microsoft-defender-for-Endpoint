@@ -17,10 +17,11 @@ In this lab, you will perform the following:
 
 - Task 1: Overview of Vulnerability Management dashboard
 - Task 2: Security recommendations
+- Task 3: Security baselines assessment
 
 ## Architecture Diagram
 
-![Picture 1](../Media/Architecture-04.4.PNG)
+![Picture 1](../Media/Architecture-04.444.PNG)
 
 ### Task 1: Overview of Vulnerability Management dashboard
 
@@ -135,6 +136,57 @@ The color of the Exposed devices graph changes as the trend changes. If the numb
 
 1. When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state will change to **Full exception** or **Partial exception** (by device group).
 
+### Task 3: Security baselines assessment
+
+Instead of running never-ending compliance scans, security baselines assessment helps you to continuously and effortlessly monitor your organization's security baselines compliance and identify changes in real time.
+
+1. From the left navigation menu, under **Endpoints**, select **Vulnerability management (1)** drop-down, choose **Baselines assessment (2)**. On the **Security baselines assessment** page, select **Profiles (3)** tab.
+
+    ![Picture 1](../Media/securitybaseline1.1.png)
+
+1. Select **+ Create** button.
+
+1. Enter a **Name** and **Description** for your security baselines profile and select **Next**.
+
+1. On the **Baseline profile scope** page set the profile settings as follows, and select **Next**:-
+
+    |Settings|Value|
+    |-------|------|
+    |Software|Microsoft Windows Server 2019|
+    |Benchmark| Select any one from the CIS or STIG|
+    |Compliance level|Select one of your choice|
+
+1. On the **Add configuration settings** page, select the configurations you want to include in the profile.
+
+1. Select **Next**. On the **Devices to assess** page, under **Device Groups** select **All device groups**.
+
+1. Select **Next** to review the profile.
+
+1. Select **Submit** to create your profile.
+
+1. On the final page, select **View profile page** to see the assessment results.
+
+    >**Note:** You can create multiple profiles for the same operating system with various customizations.
+
+1. In the **Profiles** page, select the profile that you created to open a flyout with additional information. 
+
+    ![Picture 1](../Media/baseline.png)
+
+1. Select **Open profile page**. The profile page contains two tabs **Configurations** and **Devices**.
+
+    ![Picture 1](../Media/baseline2.png)
+
+1. In the **Configurations** tab, you can review the list of configurations and assess their reported compliance state.     
+
+    ![Picture 1](../Media/configurations.png)
+
+1. By selecting a **configuration** in the list, you'll see a flyout with details for the policy setting, including the recommended value (the expected value range for a device to be considered compliant) and the source used to determine the current device settings.
+
+    ![Picture 1](../Media/recommendedvalue.png)
+
+1. Now, select **Devices** tab, it shows a list of all applicable devices and their compliance state against this specific configuration. For each device, you can use the current value detected to see why it's compliant or non compliant.
+
+    ![Picture 1](../Media/svm.png)
 
 ## Review
 
@@ -142,5 +194,6 @@ In this lab, you have completed the following:
 
 - Overview of Vulnerability Management dashboard
 - Explored Security recommendations
+- Explored Security baselines assessment
 
 ## You have successfully completed the lab.
