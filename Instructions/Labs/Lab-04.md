@@ -87,11 +87,23 @@ The color of the Exposed devices graph changes as the trend changes. If the numb
 
     >**Note:** Wait for 15-20 minutes, to show all the recommendations.
 
+1. It will open the remediation side pane, From the flyout, there are following options:
+
+    - **Open software page** - Open the software page to get more context on the software and how it's distributed. The information can include threat context, associated recommendations, weaknesses discovered, number of exposed devices, discovered vulnerabilities, names and detailed of devices with the software installed, and version distribution.
+
+    - **Remediation options** - Submit a remediation request to open a ticket in Microsoft Intune for your IT administrator to pick up and address. Track the remediation activity in the Remediation page.
+
+    - **Exception options** - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
+
+    - **Request remediation** - The vulnerability management remediation capability bridges the gap between Security and IT administrators through the remediation request workflow. Security admins like you can request for the IT Administrator to remediate a vulnerability from the Security recommendation page to Intune.
+
+    > **Note**: When a software change is made on a device, it typically takes 2 hours for the data to be reflected in the security portal. However, it may sometimes take longer. Configuration changes can take anywhere from 4 to 24 hours.
+
 1. It will open a new pane of the recommendation, on the remediation page, select **Request remediation**.
 
     ![Picture 1](../Media/requestremediation.png)
 
-    >**Note:** The vulnerability management remediation capability bridges the gap between Security and IT administrators through the remediation request workflow.
+    >**Note:** The vulnerability management remediation capability bridges the gap between Security and IT administrators through the remediation request workflow. 
 
 1. It will open a **Request remediation** form. On the **Remediation request** page, you can edit or select the **Remediation options** and **Priority** as per your choice, once done select **Next**.
 
@@ -108,6 +120,16 @@ The color of the Exposed devices graph changes as the trend changes. If the numb
     ![Picture 1](../Media/activity.png)
 
 1. After, requesting the remediation it can take 24 hours or more then 24 hours, to show the results.
+
+1. When you submit a remediation request from the Security recommendations page, it kicks off a remediation activity. A security task is created that can be tracked. There will be no progress bar, ticket status, or due date since there's no actual action we can monitor.
+
+1. Once you are in the **Remediation** page, select the remediation activity that you want to view. You can follow the remediation steps, track progress, view the related recommendation, **Export to CSV (1)**, or **mark as complete (2)**.
+
+    ![Picture 1](../Media/markascompleted.png)
+
+1. You can track who closed the remediation activity with the "**Completed by**" column on the Remediation page.
+
+    ![Picture 1](../Media/createdby.png)
 
 1. As an alternative to a remediation request when a recommendation is not relevant at the moment, you can create **exceptions** for recommendations. Only users with "**exceptions handling**" permissions can add exception.
 
