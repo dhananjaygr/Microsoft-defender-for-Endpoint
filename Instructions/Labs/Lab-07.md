@@ -48,6 +48,8 @@ In this task, set up the evaluation lab for a succinct testing environment.
 
 1. On the **Install simulators agent** tab, under the **Microsoft privacy statement**, select **Provide consent by accepting the Microsoft terms (1)**. This action will display the **Microsoft terms** page; here, you should select **I accept**. Now, return to the **Install simulators agent** tab, and select **Provide consent by accepting the information sharing statement (2)**. On the **Microsoft information sharing statement** page, again select **I accept**.
 
+    >**Important**: You'll first need to accept and provide consent to the terms and information sharing statements.
+
 1. Under **Select vendors**, accept the license agreement of **AttackIQ (3)** by selecting the links which is written under the AttackID, select the checkbox of **AttackIQ**, and select the checkbox of **SafeBreach (4)**, fill these credentials, after filling the credentials select **Next**.
 
     - Email address: <inject key="AzureAdUserEmail"></inject>
@@ -64,7 +66,13 @@ In this task, set up the evaluation lab for a succinct testing environment.
 
 ### Task 2: Add devices
 
-In this task, add devices to the evaluation lab to enhance security testing and analysis.
+When you add a device to your environment, Defender for Endpoint sets up a well-configured device with connection details. You can add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu).
+
+The device will be configured with the most up-to-date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals.
+
+If you chose to add a threat simulator during the lab setup, all devices will have the threat simulator agent installed in the devices that you add.
+
+The device will automatically be onboarded to your tenant with the recommended Windows security components turned on and in audit mode - with no effort on your side.
 
 1. On the **Your evaluation lab** page, select **Devices** tab.
 
