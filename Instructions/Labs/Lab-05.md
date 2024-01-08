@@ -302,4 +302,4 @@ In this lab, you have completed the following:
 - Tested Web Content Filtering policy 
 - Explored Automatic Investigation and response (AIR)
 
-## You have successfully completed the lab.
+## You have successfully completed the lab. Click on Next >>.

@@ -46,7 +46,7 @@ In this task, set up the evaluation lab for a succinct testing environment.
 
     ![Picture 1](../Media/labconfigurations.png)
 
-1. On the **Install simulators agent** tab, under the **Microsoft privacy statement**, select **Provide consent by accepting the Microsoft terms (1)**. This action will display the **Microsoft terms** page; here, you should select **I accept**. Now, return to the **Install simulators agent** tab, and select **Provide consent by accepting the information sharing statement (2)**. On the **Microsoft information sharing statement** page, again select **I accept**.
+1. On the **Install simulators agent** tab, under the **Microsoft privacy statement**, select **Provide consent by accepting the Microsoft terms (1)**. This action will display the **Microsoft terms** page; here, you should select **I accept**. Now, return to the **Install simulators agent** tab, and select **Provide consent by accepting the information sharing statement (2)**. On the **Microsoft information sharing statement** page, again select **I accept**. Select both the checkboxes.
 
     >**Important**: You'll first need to accept and provide consent to the terms and information sharing statements.
 

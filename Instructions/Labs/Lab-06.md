@@ -165,6 +165,8 @@ In this task, validate the simulated Drive-by URL attack to assess the vulnerabi
 
 1. Note the additional email that arrived in Inbox from the **Security and Compliance Team**. This is a legitimate email that was sent. When you configured the simulated spear phishing attack, one of the options you selected was to send a weekly Microsoft default training reminder notification.
 
+	>**Note:** Wait for a minute, if it doesn't come.
+
 1. Close, the Outlook tab.
 
 ## Review
@@ -173,5 +175,5 @@ In this lab, you have completed the following:
 - Configured and launch a Drive-by URL attack 
 - Validated the simulated Drive-by URL attack
 
-## You have successfully completed the lab.
+## You have successfully completed the lab. Click on Next >>.
  

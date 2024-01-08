@@ -92,4 +92,4 @@ In this lab, you have completed the following:
 - Onboarded Windows Client devices 
 - Ran a detection test
 
-## You have successfully completed the lab.
+## You have successfully completed the lab. Click on Next >>.

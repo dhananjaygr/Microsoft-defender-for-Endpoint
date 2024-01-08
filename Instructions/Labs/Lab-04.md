@@ -196,4 +196,4 @@ In this lab, you have completed the following:
 - Explored Security recommendations
 - Explored Security baselines assessment
 
-## You have successfully completed the lab.
+## You have successfully completed the lab. Click on Next >>.

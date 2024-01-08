@@ -192,4 +192,4 @@ In this lab, you have completed the following:
 - Configured Device Groups
 - Created Baseline Policies
 
-## You have successfully completed the lab.
+## You have successfully completed the lab. Click on Next >>.

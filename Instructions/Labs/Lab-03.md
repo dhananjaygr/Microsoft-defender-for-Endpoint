@@ -369,4 +369,4 @@ In this lab, you have completed the following:
 - Investigated Incidents & Alerts
 - Explored the Live Responses
 
-## You have successfully completed the lab.
+## You have successfully completed the lab. Click on Next >>.
