@@ -175,5 +175,5 @@ In this lab, you have completed the following:
 - Configured and launch a Drive-by URL attack 
 - Validated the simulated Drive-by URL attack
 
-## You have successfully completed the lab. Click on Next >>.
+## You have successfully completed the lab.
  
