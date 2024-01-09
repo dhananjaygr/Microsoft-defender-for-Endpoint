@@ -136,6 +136,12 @@ The color of the Exposed devices graph changes as the trend changes. If the numb
 
 1. When an exception is created for a recommendation, the recommendation is no longer active. The recommendation state will change to **Full exception** or **Partial exception** (by device group).
 
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ### Task 3: Security baselines assessment
 
 Instead of running never-ending compliance scans, security baselines assessment helps you to continuously and effortlessly monitor your organization's security baselines compliance and identify changes in real time.
