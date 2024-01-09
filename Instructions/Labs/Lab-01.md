@@ -6,13 +6,13 @@ In this lab, participants will immerse themselves in the practical implementatio
 
 ## Lab scenario
 
-The objective of this lab is to provide a hands-on experience in setting up and configuring Microsoft Defender for Endpoint, a comprehensive endpoint security solution. Participants will learn how to enhance the security posture of their organization's endpoints by implementing various features and policies offered by Defender for Endpoint.
+The objective of this lab is to provide hands-on experience in setting up and configuring Microsoft Defender for Endpoint, a comprehensive endpoint security solution. Participants will learn how to enhance the security posture of their organization's endpoints by implementing various features and policies offered by Defender for Endpoint.
 
-- **Hands-On Experience**: Participants will actively engage with the Microsoft Defender for Endpoint platform, gaining practical experience in the setup and configuration processes. This hands-on approach allows them to familiarize themselves with the actual steps involved in deploying and managing Defender for Endpoint.
+- **Hands-On Experience:** Participants will actively engage with the Microsoft Defender for Endpoint platform, gaining practical experience in the setup and configuration processes. This hands-on approach allows them to familiarize themselves with the actual steps involved in deploying and managing Defender for Endpoint.
 
-- **Understanding Endpoint Security**: The lab emphasizes the significance of endpoint security, highlighting Defender for Endpoint as a robust solution. Participants will delve into the functionalities and capabilities of the platform, understanding how it plays a pivotal role in safeguarding organizational endpoints.
+- **Understanding Endpoint Security:** The lab emphasizes the significance of endpoint security, highlighting Defender for Endpoint as a robust solution. Participants will delve into the functionalities and capabilities of the platform, understanding how it plays a pivotal role in safeguarding organizational endpoints.
 
-- **Comprehensive Security Solution**: Defender for Endpoint is positioned as a comprehensive security solution. Throughout the lab, participants will explore the diverse features and components that contribute to its comprehensive nature. This includes aspects such as threat detection, response mechanisms, and integration with other security tools.
+- **Comprehensive Security Solution:** Defender for Endpoint is positioned as a comprehensive security solution. Throughout the lab, participants will explore the diverse features and components that contribute to its comprehensive nature. This includes aspects such as threat detection, response mechanisms, and integration with other security tools.
 
 ## Lab objectives
 
@@ -31,7 +31,7 @@ In this lab, you will perform the following:
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
 
-1. Inside the Lab-VM, select **Type here to search**, type **Microsoft Edge (1)** and select it (2).
+1. Inside the Lab-VM, select **Type here to search**, type **Microsoft Edge (1)** and select it **(2)**.
 
     ![Picture 1](../Media/typeheretosearch.png)
 
@@ -47,12 +47,11 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
     ![Picture 1](../Media/devicediscovery.png)
 
-    >**Note:** If you do not see the **Device Discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and choose **Sign Out**. Other options to consider are refreshing the page, waiting for 20-25 minutes, or opening the page in private mode (InPrivate). Afterward, log in again using the **Tenant Email** credentials.
+    >**Note:** If you do not see the **Device Discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and choose **Sign Out**. Other options to consider are refreshing the page, waiting for 20-25 minutes, or opening the page in private mode (InPrivate). Afterwards, log in again using the **Tenant Email** credentials.
 
 1. In the Discovery setup make sure **Standard discovery (recommended)** is selected. 
     
     >**Hint:** If you do not see the option, refresh the page.
-
     
 ### Task 2: Configure Roles
 
@@ -82,9 +81,9 @@ In this task, you will configure roles for use with device groups.
     |Group Name| **Sg-IT** |
     |Microsoft Entra roles can be assigned to the group| **Yes** |
 
-1. Under **Owners** section, click on **No owners selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"></inject>** from the list and then click on **select**.
+1. Under **Owners** section, click on **No owners selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"></inject>** from the list and then click on **Select**.
 
-1. Under **Members** section, click on **No members selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"></inject>** from the list and then click on **select**.
+1. Under **Members** section, click on **No members selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"></inject>** from the list and then click on **Select**.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
@@ -115,7 +114,7 @@ In this task, you will configure roles for use with device groups.
 
 1. Select **Submit** and Done. If you receive an error while saving the role, refresh the page and try again.
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
@@ -148,7 +147,7 @@ In this task, you will configure device groups that allow for access control and
 
 1. For the User access tab, select **sg-IT** and then select **Add selected groups** button. Make sure it appears under **Azure AD user groups with access to this device group**.
 
-1. Select **submit**
+1. Select **Submit**
 
 1. Select **Done**.
 
