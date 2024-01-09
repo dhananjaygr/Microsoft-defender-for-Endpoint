@@ -8,15 +8,15 @@ This lab encompasses the end-to-end process of incident detection, alert generat
 
 Creating Incidents in Microsoft 365 Defender involves identifying potential security threats from various alerts and promptly responding to mitigate risks. Security analysts investigate these alerts to confirm their severity and impact.
 
-- **Incident Detection**: Participants will learn how EDR systems detect security incidents by monitoring endpoint activities and behaviors.
+- **Incident Detection:** Participants will learn how EDR systems detect security incidents by monitoring endpoint activities and behaviors.
 Understanding the criteria for identifying potential incidents is a key focus.
 
-- **Alert Generation**: The lab emphasizes the automatic generation of alerts based on detected incidents. Participants will explore how EDR platforms categorize and prioritize alerts for efficient incident response.
+- **Alert Generation:** The lab emphasizes the automatic generation of alerts based on detected incidents. Participants will explore how EDR platforms categorize and prioritize alerts for efficient incident response.
 
-- **Response Actions**: Practical response actions to mitigate the impact of incidents will be explored.
+- **Response Actions:** Practical response actions to mitigate the impact of incidents will be explored.
 Participants will learn to leverage EDR capabilities to respond to incidents effectively.
 
-- **Live Responses**: The lab introduces participants to the concept of live responses for real-time remediation.
+- **Live Responses:** The lab introduces participants to the concept of live responses for real-time remediation.
 Practical scenarios will be simulated where participants actively respond to ongoing security incidents.
 
 ## Lab objectives
@@ -67,13 +67,13 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. In the new browser tab, locate the section named **Run the simulation** (page 5, starting at step 2) and follow the steps to run the attack. 
 
-    > **Hint:** The simulation file *RS4_WinATP-Intro-Invoice.docm* can be found back in Microsoft defender portal, just below the **Read the walkthrough** you selected in the previous step by selecting the **Get simulation file** button. 
+    > **Hint:** The simulation file *RS4_WinATP-Intro-Invoice.docm* can be found back in the Microsoft Defender portal, just below the **Read the walkthrough** you selected in the previous step by selecting the **Get simulation file** button. 
 
 1. After downloading the file, select **Open file**. It will open with **Microsoft Word** and enter the password as `WDATP!diy#`.
 
 1. Select **Continue** to activate the word.
 
-1. On the **Activate office** pop-up, copy and paste the Username and password provided in the environment details page, and select next. 
+1. On the **Activate office** pop-up, copy and paste the Username and password provided in the environment details page, and select **Next**. 
 
 1. On the **Stay signed in to all your apps**, select **No, sign in to this app only**.
 
@@ -93,7 +93,7 @@ In this task, you will run two simulated attacks to explore the capabilities of 
       
     >**Note:** **Congrats – you’re done running the attack!** The attack simulation ends here. A real attacker, if successful, would likely continue to scan for information, send collected reconnaissance information to a command-and-control (C&C) server, and use this information to move laterally and pursue other attractive targets. Next, let’s review and investigate the Defender for Endpoint alerts that surfaced in the simulated attack.
 
-    >**Note:** Incidents & Alerts should start to appear 15-30 minutes after the simulated backdoor is launched.
+    >**Note:** Incidents and alerts should start to appear 15-30 minutes after the simulated backdoor is launched.
 
 1. Open the Microsoft 365 Defender portal select **Incidents & alerts** from the left menu bar, then select **Incidents**.
 
@@ -125,7 +125,7 @@ When you investigate an incident, you'll see:
 - Incident comments and actions
 - Tabs (attack story, alerts, assets, investigations, evidence & response, summary)
 
-1. Navigate, back to the **Incidents** page, by selecting **Incidents**, under **Incidents & alerts**.
+1. Navigate back to the **Incidents** page, by selecting **Incidents**, under **Incidents & alerts**.
 
 1. Select the new incident named "**Multi-stage incident involving Initial access & Persistence on one endpoint**" to load its details. This opens the main page for the incident where you'll find the full attack story information and tabs for alerts, devices, users, investigations, and evidence. 
 
@@ -133,7 +133,7 @@ When you investigate an incident, you'll see:
 
     >**Note:** Select **Close** on the **Multi-stage incident involving Initial access & Persistence on one endpoint**.
 
-1. Here are the detailed information of the tabs:
+1. Here are the detailed information on the tabs:
 
     - **Attack story**:- 
 
@@ -173,7 +173,7 @@ When you investigate an incident, you'll see:
                 
                 ![Picture 1](../Media/devices.png)
             
-                - Selecting a device from the list opens a bar that allows you to manage the selected device. You can quickly export, manage tags, initiate automated investigation, and more.
+                - Selecting a device from the list opens a bar that allows you to manage the selected device. You can quickly export, manage tags, initiate automated investigations, and more.
 
                 - Select the name of the device to see device details in the Defender for Endpoint device inventory. From the device page, you can gather additional information about the device, such as all of its alerts, a timeline, and security recommendations. For example, from the Timeline tab, you can scroll through the device timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised. Here's an example
 
@@ -208,7 +208,7 @@ When you investigate an incident, you'll see:
     - There is also an Investigation graph tab that shows:
 
         - The connection of alerts to the impacted assets in your organization.
-        - Which entities are related to which alerts and how they are part of the story of the attack.
+        - Which entities are related to which alerts and how they are part of the story of the attack?
         - The alerts for the incident.
 
     - The investigation graph helps you quickly understand the full scope of the attack by connecting the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes.
@@ -221,15 +221,15 @@ When you investigate an incident, you'll see:
 
         ![Picture 1](../Media/evidence.png)
 
-    - Microsoft Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
+    - Microsoft Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
 
     - Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
 
-1. To continue on the investigation, select **Alerts** tab, select any one alert. It will open the detailed information about the alert.               
+1. To continue the investigation, select the **Alerts** tab, and select any one alert. It will open detailed information about the alert.               
 
     ![Picture 1](../Media/alerts1.png)
 
-1. On the alert page, under **Alert story** select any item in the process tree to open the side pane, it contain details like execution and file details including the hash, size and signer. Scroll down to the side pane to understand the number of times this file has been seen worldwide and in the organization. 
+1. On the alert page, under **Alert story** select any item in the process tree to open the side pane, it contains details like execution and file details including the hash, size and signer. Scroll down to the side pane to understand the number of times this file has been seen worldwide and in the organization. 
 
 1. Select **Open file page**, to drill into it and continue with the investigation. The file page provides incredible details about an executable file. 
 
@@ -241,11 +241,11 @@ When you investigate an incident, you'll see:
 
     - The **Observed in Organization (3)** tab provides even more context. It lists the machine this file has been observed on, and you can even use the interactive timeline to scope it to a date range within the past six months. 
 
-    - Last, if you're unsure whether the file is malicious, send it for **Deep analysis (4)**. Select **Submit**, it will submits the file to Microsoft Defender for Endpoint for detonation and observation, with detailed results provided in a report.
+    - Last, if you're unsure whether the file is malicious, send it for **Deep analysis (4)**. Select **Submit**, it will submit the file to Microsoft Defender for Endpoint for detonation and observation, with detailed results provided in a report.
 
         >**Note:** If the file is malicious, select **Stop and Quarantine File**, it will display the pop-up of the **Stop and Quarantine File**, provide a comment and select **Confirm**.
 
-1. Once, you are satisfied that you have dealt with the incident and addressed the alerts linked to it and taken all required remediation actions, the step is to resolve it. To do that, select **Manage incident**
+1. Once, you are satisfied that you have dealt with the incident addressed the alerts linked to it and taken all required remediation actions, the step is to resolve it. To do that, select **Manage incident**
 
 1. Navigate back to the **Incident** page, on the **Attack story** tab, select the alert which you were investigating, and select **Manage alert**.
 
@@ -283,7 +283,7 @@ Take or undo remediation actions.
 
     ![Picture 1](../Media/advancefeatures.png)
 
-1. From the left-navigation menu, under **Assets**, select **Devices (1)**, and select the device (2) which you are using to generate the alerts and the incidents.
+1. From the left navigation menu, under **Assets**, select **Devices (1)**, and select the device (2) that you are using to generate the alerts and the incidents.
 
     ![Picture 1](../Media/device1.png)
 
@@ -299,33 +299,33 @@ Take or undo remediation actions.
 
         ![Picture 1](../Media/sessionID.png)
 
-1. Now run these following commands:
+1. Now run the following commands:
 
-    ```powershell
+    ```PowerShell
     connect
     ```
 
     >**Note:** **Connect**:- It initiates a live response session to the device.
 
-    ```powershell
+    ```PowerShell
     connections
     ```
 
     >**Note:** **Connections**:- Shows all the active connections.
 
-    ```powershell
+    ```PowerShell
     processes
     ```
 
     >**Note:** **Processes**:- Shows all processes running on the device.
 
-    ```powershell
+    ```PowerShell
     scheduledtasks
     ```
 
     >**Note:** **scheduledtasks**:- Shows all scheduled tasks on the device.
 
-    ```powershell
+    ```PowerShell
     services
     ```
 
@@ -337,23 +337,23 @@ Take or undo remediation actions.
 
         ![Picture 1](../Media/liveresponse.png)
 
-    2. Select **Upload file to library (1)**, selecṭ the **Malware script**, and any **Diagnostic script** (2) to upload. Select **Submit**.
+    2. Select **Upload file to library (1)**, selecṭ the **Malware script**, and any **Diagnostic script** **(2)** to upload. Select **Submit**.
 
         ![Picture 1](../Media/uploadfile.png)
 
-    3. After uploading the script, run these following commands:
+    3. After uploading the script, run the following commands:
 
-        ```powershell
+        ```PowerShell
         library
         ```
 
-        ```powershell
+        ```PowerShell
         Run <Filename>
         ```
 
 1. View the console help to learn about command parameters. To learn about an individual command, run:
 
-    ```powershell
+    ```PowerShell
     help <command name>
     ```
 
@@ -371,7 +371,7 @@ Take or undo remediation actions.
 ## Review
 In this lab, you have completed the following:
 
-- Created Incident and alerts
+- Created Incidents and alerts
 - Investigated Incidents & Alerts
 - Explored the Live Responses
 

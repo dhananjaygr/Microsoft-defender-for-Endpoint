@@ -2,16 +2,16 @@
 
 ## Lab overview
 
-The objective of this lab is to provide a hands-on experience in configuring and testing the capabilities of Microsoft Defender for Endpoint. Participants will engage in setting up Defender for Endpoint on Windows client devices, configuring various security policies, and testing its threat detection and response capabilities. Through practical exercises, participants will gain insights into enhancing endpoint security, ensuring compliance, and effectively mitigating potential threats using Defender for Endpoint features.
+The objective of this lab is to provide hands-on experience in configuring and testing the capabilities of Microsoft Defender for Endpoint. Participants will engage in setting up Defender for Endpoint on Windows client devices, configuring various security policies, and testing its threat detection and response capabilities. Through practical exercises, participants will gain insights into enhancing endpoint security, ensuring compliance, and effectively mitigating potential threats using Defender for Endpoint features.
 
 ## Lab scenario
 
-- **Create Attack Surface Reduction Rules**: Participants will learn the process of creating rules for attack surface reduction.
+- **Create Attack Surface Reduction Rules:** Participants will learn the process of creating rules for attack surface reduction.
 Understanding how to limit the attack surface and mitigate potential security risks is a key objective.
 
-- **Configure Web Content Filtering**: The lab guides participants in configuring web content filtering policies. Understanding the importance of controlling web content access and implementing appropriate filtering measures.
+- **Configure Web Content Filtering:** The lab guides participants in configuring web content filtering policies. Understanding the importance of controlling web content access and implementing appropriate filtering measures.
 
-- **Testing Web Content Filtering Policy**: Practical scenarios will be simulated to test the effectiveness of web content filtering policies.
+- **Testing Web Content Filtering Policy:** Practical scenarios will be simulated to test the effectiveness of web content filtering policies.
 Participants will actively assess the impact of configured policies on web content access.
 
 - **Explore Automatic Investigation and Response (AIR)**: Participants will explore the capabilities of Automatic Investigation and Response (AIR).
@@ -23,7 +23,7 @@ In this lab, you will perform the following:
 
 - Task 1: Create Attack Surface Reduction Rules  
 - Task 2: Configure Web Content Filtering 
-- Task 3: Testing Web Content Filtering policy 
+- Task 3: Testing Web Content Filtering Policy 
 - Task 4: Explore Automatic Investigation and response (AIR)  
 
 ## Architecture Diagram
@@ -36,7 +36,7 @@ In this task, create Attack Surface Reduction rules to minimize vulnerabilities 
 
 1. Open a new tab, and browse to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-1. From the left-navigation menu select, **Endpoint Security (1)**. On the **Endpoint security | Overview** page, from the left-navigation menu under **Manage** section, select **Attack surface reduction (2)**.
+1. From the left-navigation menu select, **Endpoint Security (1)**. On the **Endpoint security | Overview** page, from the left navigation menu under the **Manage** section, select **Attack surface reduction (2)**.
 
     ![Picture 1](../Media/attacksurface.png)
 
@@ -77,11 +77,11 @@ In this task, create Attack Surface Reduction rules to minimize vulnerabilities 
 
 1. In the **Scope tags** pane, keep everything as default and select **Next**.
 
-    >**Note:** you can add tag information to specific devices. You can also use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Learn more: Use role-based access control (RBAC) and scope tags for distributed IT in Intune.
+    >**Note:** You can add tag information to specific devices. You can also use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Learn more: Use role-based access control (RBAC) and scope tags for distributed IT in Intune.
 
 1. In the **Assignments** pane, you can deploy or "assign" the profile to your user or device groups. Under **Included groups** select **Add groups** and choose the **Sg-IT** group that you created in Lab-01, choose **Select**, and select **Next**.
 
-1. Now, review your settings in the **Review + create** pane. Click **Create** to apply the rules.
+1. Now, review your settings in the **Review + Create** pane. Click **Create** to apply the rules.
 
 1. Your new attack surface reduction policy for ASR rules is listed in **Endpoint security | Attack surface reduction**.
 
@@ -103,7 +103,7 @@ In this task, configure policies across device groups to block specified categor
 
 1. Now navigate back to the [Microsoft Intune Admin Center](https://intune.microsoft.com/#home) page.
 
-1. From the left navigation pane, select **Endpoint security (1)**. On **Endpoint security | Overview** page, from the left navigation menu select **Antivirus (2)**.
+1. From the left navigation pane, select **Endpoint security (1)**. On the **Endpoint security | Overview** page, from the left navigation menu select **Antivirus (2)**.
 
     ![Picture 1](../Media/endpoint-security.png)
 
@@ -111,7 +111,7 @@ In this task, configure policies across device groups to block specified categor
 
     ![Picture 1](../Media/createaprofile.png)
 
-1. On **Create profile** page, give the name of your choice, and select **Next**.
+1. On the **Create profile** page, give the name of your choice, and select **Next**.
 
 1. In **Configuration settings**, follow the instructions provided in the screenshots, and then select **Next (8)**.
 
@@ -125,7 +125,7 @@ In this task, configure policies across device groups to block specified categor
 
 1. Keep everything as default in **Scope tags** page, and select **Next**.
 
-1. On the **Assignments** page, under **Included groups**, select **Add groups**. On **Select groups to include** page, choose **Sg-IT**, and choose **Select**. Select **Next**.
+1. On the **Assignments** page, under **Included groups**, select **Add groups**. On the **Select groups to include** page, choose **Sg-IT**, and choose **Select**. Select **Next**.
 
 1. On the **Review + create** page, review all informations and select **Create**.
 
@@ -135,16 +135,16 @@ In this task, configure policies across device groups to block specified categor
 
 1. Inside your Lab-VM, in **Type here to search** search for **Windows PowerShell**, right-click on it and select **Run as administrator**. Run these commands to enable block mode and audit mode.
 
-    ```powershell
+    ```PowerShell
     Set-MpPreference -EnableNetworkProtection Enabled
     ```
 
-    ```powershell
+    ```PowerShell
     Set-MpPreference -EnableNetworkProtection AuditMode
     ```
 1. Close the **Windows PowerShell**.
 
-1. Now, navigate back to the Microsoft Defender portal, choose **Settings (1) > Endpoints > Web content filtering (2) > + Add policy (3)**.
+1. Now, navigate back to the Microsoft Defender portal, and choose **Settings (1) > Endpoints > Web content filtering (2) > + Add policy (3)**.
 
     ![Picture 1](../Media/endpoints.png)
 
@@ -152,7 +152,7 @@ In this task, configure policies across device groups to block specified categor
 
     ![Picture 1](../Media/add-policy2.png)
 
-1. On **Blocked Categories** page, select the categories to block, select specific web content categories, and select **Next**.
+1. On the **Blocked Categories** page, select the categories to block, select specific web content categories, and select **Next**.
 
     >**Note:** 
     > Web content filtering policies specify which site categories are blocked on which device groups.
@@ -198,7 +198,7 @@ In this task, configure policies across device groups to block specified categor
 
 1. On the **Web content filtering** page, you can see the policy you created. If it is not visible, refresh the page, and it will appear.
 
-### Task 3: Testing Web Content Filtering policy
+### Task 3: Testing Web Content Filtering Policy
 
 A "Testing Web Content Filtering policy" typically refers to the process of evaluating or assessing the effectiveness of a web content filtering policy. Web content filtering policies are established to control and restrict access to certain types of content on the internet, usually based on categories such as explicit content, malware, or social media.
 
@@ -281,7 +281,7 @@ In this task, implement Automatic Investigation and Response (AIR): Enhancing cy
     - Select **Reject** to prevent a pending action from being taken.
     - Select **Go hunt** to go into **Advanced hunting**.
 
-1. For incidents with a remediation status of **Pending approval**, you can also approve or reject a remediation action from within the incident. In the left-navigation pane, go to **Incidents & alerts > Incidents**.
+1. For incidents with a remediation status of **Pending approval**, you can also approve or reject a remediation action from within the incident. In the left navigation pane, go to **Incidents & alerts > Incidents**.
 
 1. Select an incident name to open its summary page.
 

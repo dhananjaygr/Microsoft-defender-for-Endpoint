@@ -33,21 +33,23 @@ In this lab, you will perform the following:
 
 ### Task 1: Onboard Windows Client devices
 
-In this task, you will onboard windows client devices to Microsoft Defender for Endpoint using an onboarding script.
+In this task, you will onboard Windows client devices to Microsoft Defender for Endpoint using an onboarding script.
 
 1. If you are not already at the Microsoft Defender portal in your browser, start the Microsoft Edge browser go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
 
 1. Select **Settings (1)** from the left menu bar, then from the Settings page, select **Endpoints**.
 
-1. Select **Onboarding (2)** under Device Management section.
+1. Select **Onboarding (2)** under the Device Management section.
 
     >**Note:** You can also perform device onboarding from the **Assets** section of the left menu bar. Expand Assets and select Devices. On the Device Inventory page, with Computers & Mobile selected, scroll down to **Onboard devices.** This takes you to the **Settings > Endpoints** page.
 
     ![Picture 1](../Media/settings.png)
 
-1. In the "**1. Onboard a device**" area make sure "**Local Script (for up to 10 devices)**" is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
+1. In the **1. Onboard a device** area make sure **Local Script (for up to 10 devices)** is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
 
-1. Under the *Downloads* pop-up, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
+1. Under the *Downloads* pop-up, highlight the **WindowsDefenderATPOnboardingPackage.zip** file with your mouse and select the folder icon **Show in folder**.
+
+    >**Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
 
 1. Right-click the downloaded zip file and select **Extract All...**, make sure that **Show extracted files when complete** is checked and select **Extract**.
 
@@ -67,12 +69,11 @@ In this task, you will onboard windows client devices to Microsoft Defender for 
 
     ![Picture 1](../Media/SC-200-img25.png)
 
-
 ### Task 2: Run a detection test
 
 In this task, run the following PowerShell script on a newly onboarded device to verify that it's properly reporting to the Defender for Endpoint service.
 
-1. Back in the Onboarding page from the Microsoft Defender portal, under the section "**2. Run a detection test**", copy the detection test script by selecting the **Copy** button.  
+1. Back in the Onboarding page from the Microsoft Defender portal, under the section **2. Run a detection test**, and copy the detection test script by selecting the **Copy** button.  
 
 1. Inside the Lab-VM, select **Type here to search**, and search for **CMD**, right-click on **Command Prompt** and select **Run as administrator**.
 
@@ -80,7 +81,7 @@ In this task, run the following PowerShell script on a newly onboarded device to
 
     >**Note:** The window closes automatically after running the script.
 
-1. Open the Microsoft Defender portal, in the left-hand menu, under the **Assets** area, select **Devices**. If the device is not shown, complete the next task and come back to check it back later. It can take up to 60 minutes for the first device to be displayed in the portal.
+1. Open the Microsoft Defender portal, in the left-hand menu, under the **Assets** area, select **Devices**. If the device is not shown, complete the next task and come back to check it later. It can take up to 60 minutes for the first device to be displayed in the portal.
 
      ![Picture 1](../Media/SC-200-img22.png)
 

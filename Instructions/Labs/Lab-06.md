@@ -8,10 +8,10 @@ Participants will actively engage in configuring and launching a simulated Drive
 
 In this lab, participants configured and executed a simulated Drive-by URL attack, a common cybersecurity threat. By setting up the attack parameters and launching it, participants gained practical insights into the techniques employed by attackers in spreading malware through malicious websites. Additionally, participants validated the success of the simulated Drive-by URL attack, allowing for a comprehensive understanding of the potential risks and the importance of robust cybersecurity measures to counter such threats.
 
-- **Configure and Launch a Drive-by URL Attack**: Participants will actively configure the parameters and launch a simulated Drive-by URL attack.
+- **Configure and Launch a Drive-by URL Attack:** Participants will actively configure the parameters and launch a simulated Drive-by URL attack.
 Understanding the mechanics of Drive-by URL attacks and their potential impact is a key objective.
 
-- **Validate the Simulated Drive-by URL Attack**: The lab guides participants in validating the effectiveness of the simulated Drive-by URL attack.
+- **Validate the Simulated Drive-by URL Attack:** The lab guides participants in validating the effectiveness of the simulated Drive-by URL attack.
 Participants will assess the impact of the attack and explore potential indicators of compromise.
 
 ## Lab objectives
@@ -49,7 +49,7 @@ In this task, simulated attacks can help you identify and find vulnerable users 
 
 	- **Link in Attachment**: This technique is a hybrid of a credential harvest. An attacker sends the recipient a message that contains a URL inside of an attachment. When the recipient opens the attachment and clicks on the URL, they're taken to a website that typically shows a dialog box that asks the user for their username and password. Typically, the destination page is themed to represent a well-known website in order to build trust in the user.
 
-	- **Link to Malware**: An attacker sends the recipient a message that contains a link to an attachment on a well-known file sharing site (for example, SharePoint Online or Dropbox). When the recipient clicks on the URL, the attachment opens, and arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
+	- **Link to Malware**: An attacker sends the recipient a message that contains a link to an attachment on a well-known file-sharing site (for example, SharePoint Online or Dropbox). When the recipient clicks on the URL, the attachment opens, and arbitrary code (for example, a macro) is run on the user's device to help the attacker install additional code or further entrench themselves.
 
 	- **Drive-by URL**: An attacker sends the recipient a message that contains a URL. When the recipient clicks on the URL, they're taken to a website that tries to run background code. This background code attempts to gather information about the recipient or deploy arbitrary code on their device. Typically, the destination website is a well-known website that has been compromised or a clone of a well-known website. Familiarity with the website helps convince the user that the link is safe to click. This technique is also known as a watering hole attack.
 
@@ -79,7 +79,7 @@ In this task, simulated attacks can help you identify and find vulnerable users 
 	- Theme: **Personalized Offer**
 	- Industry: **Retail**
 	- Current Event: **Yes**
-	- Select the language for payload : **English** 
+	- Select the language for payload: **English** 
 	- Email message: Under the Text tab in this **Email message** section, enter the following text in the message box; this message will be displayed in the body of the email message: **Tailspin Toys is offering you a FREE, one-time only giveaway of a toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice:** 
 	- After entering the prior message, select the **Phishing link** button that appears just above the message box (to the right of **Dynamic tag**). In the **Name Phishing Url** dialog box that appears, enter **Free25thAnniversaryGift@tailspintoys.com** in the **Name** field and then select **Confirm**.
 
@@ -139,7 +139,7 @@ In this task, simulated attacks can help you identify and find vulnerable users 
 
 1. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
-1. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. It may take a few minutes before you receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
+1. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. It may take a few minutes before you receive a confirmation stating that **Simulation has been scheduled for launch**. Select **Done**.
 
 	>**Note:** Once the simulated drive-by URL attack is launched, an email should be sent to <inject key="AzureAdUserEmail"></inject>. It can take up to 15 minutes for the email to be generated.
 
@@ -149,7 +149,7 @@ In this task, simulated attacks can help you identify and find vulnerable users 
 
 In this task, validate the simulated Drive-by URL attack to assess the vulnerability of your system. This test provides an overview of how well your defenses can withstand a common cyber threat, allowing you to enhance security measures effectively.
 
-1. Open an another tab, and browse to the [Outlook](https://www.microsoft.com/en/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2Fowa%2F&sdf=0), select **Sign in**. If it asks you for the sign-in credentials, then enter these credentials, 
+1. Open another tab, and browse to the [Outlook](https://www.microsoft.com/en/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2Fowa%2F&sdf=0), select **Sign in**. If it asks you for the sign-in credentials, then enter these credentials, 
 
 	- Username: <inject key="AzureAdUserEmail"></inject>
 	
@@ -161,9 +161,9 @@ In this task, validate the simulated Drive-by URL attack to assess the vulnerabi
 
 1. In the email, you should recognize the message that appears. The purpose of this message is to trick the user into thinking this is a legitimate email, when in fact, it's a Drive-by URL attack. 
 
-1. To test this simulated attack, select the **Free25thAnniversaryGift@tailspintoys.com** link. Note what happens - the simulated drive-by URL attack displays a web page that indicates you were just phished by your IT team. It instructs you that legitimate sounding sites such as **https://www.prizegives.com**, which was the site linked to the **Free25thAnniversaryGift@tailspintoys.com** link, have been compromised by malicious attackers. So even though you may see the underlying www.prizegives.com site and you think it's legitimate, it's in fact been compromised. This site also shows you a list of information that could have been captured had this been a real attack. 
+1. To test this simulated attack, select the **Free25thAnniversaryGift@tailspintoys.com** link. Note what happens - the simulated drive-by URL attack displays a web page that indicates you were just phished by your IT team. It instructs you that legitimate-sounding sites such as **https://www.prizegives.com**, which was the site linked to the **Free25thAnniversaryGift@tailspintoys.com** link, have been compromised by malicious attackers. So even though you may see the underlying www.prizegives.com site and think it's legitimate, it's been compromised. This site also shows you a list of information that could have been captured had this been a real attack. 
 
-1. Note the additional email that arrived in Inbox from the **Security and Compliance Team**. This is a legitimate email that was sent. When you configured the simulated spear phishing attack, one of the options you selected was to send a weekly Microsoft default training reminder notification.
+1. Note the additional email that arrived in the Inbox from the **Security and Compliance Team**. This is a legitimate email that was sent. When you configured the simulated spear phishing attack, one of the options you selected was to send a weekly Microsoft default training reminder notification.
 
 	>**Note:** Wait for a minute, if it doesn't come.
 
@@ -178,7 +178,7 @@ In this task, validate the simulated Drive-by URL attack to assess the vulnerabi
 ## Review
 In this lab, you have completed the following:
 
-- Configured and launch a Drive-by URL attack 
+- Configured and launched a Drive-by URL attack 
 - Validated the simulated Drive-by URL attack
 
 ## You have successfully completed the lab.
