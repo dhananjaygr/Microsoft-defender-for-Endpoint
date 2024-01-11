@@ -51,9 +51,10 @@ In this task, you will onboard Windows client devices to Microsoft Defender for 
 
 1. In the **1. Onboard a device** area make sure **Local Script (for up to 10 devices)** is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
 
-1. Under the *Downloads* pop-up, highlight the **WindowsDefenderATPOnboardingPackage.zip** file with your mouse and select the folder icon **Show in folder**.
+1. Under the *Downloads* pop-up, highlight the "**WindowsDefenderATPOnboardingPackage.zip**" file with your mouse and select the folder icon **Show in folder**. 
 
-1. Under the *Downloads* pop-up, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
+
+    >**Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
 
     ![Picture 1](../Media/showinfolder.png)
 
