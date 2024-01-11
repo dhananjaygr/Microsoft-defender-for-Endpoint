@@ -33,13 +33,13 @@ In this lab, you will perform the following:
 
 ### Task 1: Onboard Windows Client devices
 
-In this task, you will onboard windows client devices to Microsoft Defender for Endpoint using an onboarding script.
+In this task, you will onboard Windows client devices to Microsoft Defender for Endpoint using an onboarding script.
 
 1. If you are not already at the Microsoft Defender portal in your browser, start the Microsoft Edge browser go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
 
 1. Select **Settings (1)** from the left menu bar, then from the Settings page, select **Endpoints**.
 
-1. Select **Onboarding (2)** under Device Management section.
+1. Select **Onboarding (2)** under the Device Management section.
 
     >**Note:** You can also perform device onboarding from the **Assets** section of the left menu bar. Expand Assets and select Devices. On the Device Inventory page, with Computers & Mobile selected, scroll down to **Onboard devices.** This takes you to the **Settings > Endpoints** page.
 
@@ -48,6 +48,10 @@ In this task, you will onboard windows client devices to Microsoft Defender for 
 1. In the "**1. Onboard a device**" area make sure "**Local Script (for up to 10 devices) (1)**" is displayed in the Deployment method drop-down and select the **Download onboarding package (2)** button. 
 
     ![Picture 1](../Media/onboarding.png)
+
+1. In the **1. Onboard a device** area make sure **Local Script (for up to 10 devices)** is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
+
+1. Under the *Downloads* pop-up, highlight the **WindowsDefenderATPOnboardingPackage.zip** file with your mouse and select the folder icon **Show in folder**.
 
 1. Under the *Downloads* pop-up, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
 
@@ -70,7 +74,6 @@ In this task, you will onboard windows client devices to Microsoft Defender for 
 1. Press any key to continue. This will close the Command Prompt window.
 
     ![Picture 1](../Media/SC-200-img25.png)
-
 
 ### Task 2: Run a detection test
 
