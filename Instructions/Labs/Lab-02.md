@@ -45,9 +45,13 @@ In this task, you will onboard windows client devices to Microsoft Defender for 
 
     ![Picture 1](../Media/settings.png)
 
-1. In the "**1. Onboard a device**" area make sure "**Local Script (for up to 10 devices)**" is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
+1. In the "**1. Onboard a device**" area make sure "**Local Script (for up to 10 devices) (1)**" is displayed in the Deployment method drop-down and select the **Download onboarding package (2)** button. 
+
+    ![Picture 1](../Media/onboarding.png)
 
 1. Under the *Downloads* pop-up, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
+
+    ![Picture 1](../Media/showinfolder.png)
 
 1. Right-click the downloaded zip file and select **Extract All...**, make sure that **Show extracted files when complete** is checked and select **Extract**.
 
@@ -74,15 +78,19 @@ In this task, run the following PowerShell script on a newly onboarded device to
 
 1. Back in the Onboarding page from the Microsoft Defender portal, under the section "**2. Run a detection test**", copy the detection test script by selecting the **Copy** button.  
 
-1. Inside the Lab-VM, select **Type here to search**, and search for **CMD**, right-click on **Command Prompt** and select **Run as administrator**.
+    ![Picture 1](../Media/copy.png)
+
+1. Inside the Lab-VM, on the **Type here to search**, and search for **CMD (1)**, right-click on **Command Prompt (2)** and select **Run as administrator**.
+
+    ![Picture 1](../Media/cmd.png)
 
 1. Paste the script by right-clicking in the **Administrator: Command Prompt** windows and press **Enter** to run it. 
 
     >**Note:** The window closes automatically after running the script.
 
-1. Open the Microsoft Defender portal, in the left-hand menu, under the **Assets** area, select **Devices**. If the device is not shown, complete the next task and come back to check it back later. It can take up to 60 minutes for the first device to be displayed in the portal.
+1. Open the Microsoft Defender portal. In the left-hand menu, under the **Assets** area, select **Devices (1)**. You can see the device that is onboarded. If the device is not shown, complete the previous task and come back to check it later. It can take up to 60 minutes for the first device to be displayed in the portal.
 
-     ![Picture 1](../Media/SC-200-img22.png)
+     ![Picture 1](../Media/![Picture 1](../Media/devicess.png).png)
 
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
 

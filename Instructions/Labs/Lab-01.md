@@ -53,6 +53,8 @@ In this task, you will perform the initialization of the Microsoft Defender for 
     
     >**Hint:** If you do not see the option, refresh the page.
 
+    ![Picture 1](../Media/standarddiscovery.png)
+
     
 ### Task 2: Configure Roles
 
@@ -60,11 +62,17 @@ In this task, you will configure roles for use with device groups.
 
 1. Open a new tab, and browse to the [Azure portal](https://portal.azure.com).
 
-1. In the **Sign in** dialog box, copy and paste Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
+1. In the **Sign in** dialog box, copy and paste **Email/Username (1)**: <inject key="AzureAdUserEmail"></inject> and then select **Next (2)**.
 
-1. In the **Enter password** dialog box, copy and paste Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+    ![Picture 1](../Media/portal1.png)
+
+1. In the **Enter password** dialog box, copy and paste **Password (1)**: <inject key="AzureAdUserPassword"></inject> and then select **Sign in (2)**.
+
+    ![Picture 1](../Media/portal2.png)
 
 1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
+
+    ![Picture 1](../Media/portal3.png)
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
@@ -72,48 +80,66 @@ In this task, you will configure roles for use with device groups.
 
     ![Picture 1](../Media/microsoftentra.png)
 
-1. Select **Groups** and then click on **New group**.
+1. Select **Groups (1)** and then click on **New group (2)**.
 
+    ![Picture 1](../Media/groups.png)
+
+    ![Picture 1](../Media/newgroup.png)
+    
 1. Enter the below details for the New group page:
 
    |Setting|Value|
     |---|---|
-    |Group Type| **Microsoft 365** |
-    |Group Name| **Sg-IT** |
-    |Microsoft Entra roles can be assigned to the group| **Yes** |
+    |Group Type| **Microsoft 365 (1)** |
+    |Group Name| **Sg-IT (2)** |
+    |Microsoft Entra roles can be assigned to the group| **Yes (3)** |
 
-1. Under **Owners** section, click on **No owners selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"></inject>** from the list and then click on **select**.
+1. Under **Owners** section, click on **No owners selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"></inject> (4)** from the list and then click on **select**.
 
-1. Under **Members** section, click on **No members selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"></inject>** from the list and then click on **select**.
+1. Under **Members** section, click on **No members selected** and select the **ODL_User <inject key="DeploymentID" enableCopy="false"></inject> (5)** from the list and then click on **select**.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
-1. Select **Create** and click on **Yes**. 
+1. Select **Create (6)** and click on **Yes (7)**. 
+
+    ![Picture 1](../Media/newgroup(1).png)
+
+    ![Picture 1](../Media/yes.png)
 
 1. On the **Groups | All groups** page, if you are not able to see the group that you created, **Refresh (1)** the page.
 
     ![Picture 1](../Media/refresh.png)
 
-1. Navigate back to the **Settings-Microsoft Defender** tab. In the Microsoft Defender portal select **Settings** from the left menu bar, then select **Endpoints**. 
+1. Navigate back to the **Microsoft Defender** portal tab. In the Microsoft Defender portal select **Settings (1)** from the left menu bar, then select **Endpoints (2)**. 
+
+    ![Picture 1](../Media/Microsoftdefenderportal.png)
 
 1. Select **Roles (1)** under the permissions.
 
-1. Select the **Turn on roles** button.
+1. Select the **Turn on roles (2)** button.
 
-1. Select **+ Add Role (2)**.
+    ![Picture 1](../Media/turnonroles.png)
 
-    ![Picture 1](../Media/addrole.png)
+1. Select **+ Add Role**.
 
-1. In the Add role dialog enter the following, and select **Next**:
+    ![Picture 1](../Media/addroles.png)
+
+1. In the Add role dialog enter the following, and select **Next (4)**:
 
     |General setting|Value|
     |---|---|
-    |Role name|**Tier 1 Support**|
-    |Permissions|**Live Response capabilities** > **Advanced**|
+    |Role name|**Tier 1 Support (1)**|
+    |Permissions|**Live Response capabilities (2)** > **Advanced (3)**|
 
-1. On the **Add role** page, select **sg-IT** and then select **Add selected groups**. Make sure it appears under **Azure AD user groups with this role**.
+    ![Picture 1](../Media/tier1.png)
 
-1. Select **Submit** and Done. If you receive an error while saving the role, refresh the page and try again.
+1. On the **Add role** page, select **sg-IT (1)** and then select **Add selected groups (2)**. Make sure it appears under **Azure AD user groups with this role (3)**.
+
+    ![Picture 1](../Media/adduser.png)
+
+1. Select **Submit (4)** and Done. If you receive an error while saving the role, refresh the page and try again.
+
+    ![Picture 1](../Media/sgit.png)
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -137,22 +163,28 @@ In this task, you will configure device groups that allow for access control and
 
     |General setting|Value|
     |---|---|
-    |Device group name|**Regular**|
-    |Remediation level| **Full-Remediate threats automatically**|
+    |Device group name|**Regular (1)**|
+    |Remediation level| **Full-Remediate threats automatically (2)**|
 
-1. Select **Next**.
+1. Select **Next (3)**.
 
-1. On the Devices tab, for the OS condition select **Windows 10** and select **Next**.
+    ![Picture 1](../Media/group.png)
 
-1. On the Preview devices tab, select **Next**.
+1. On the **Devices** tab, for the OS condition select **Windows Server 2022 (1)** and select **Next (2)**.
 
-1. For the User access tab, select **sg-IT** and then select **Add selected groups** button. Make sure it appears under **Azure AD user groups with access to this device group**.
+    ![Picture 1](../Media/windowsserver2022.png)
+
+1. On the **Preview devices** tab, select **Next**.
+
+1. On the User access tab, select **sg-IT** and then select **Add selected groups** button. Make sure it appears under **Azure AD user groups with access to this device group**.
 
 1. Select **submit**
 
 1. Select **Done**.
 
 1. Device group configuration has changed. Select **Apply changes** to check matches and recalculate groupings.
+
+    ![Picture 1](../Media/applychanges.png)
 
 1. You are going to have two device groups now; the **Regular** you just created and the **Ungrouped devices (default)** with the same remediation level.
 
@@ -164,7 +196,7 @@ In this task, your objective is to implement the Windows Intune security baselin
 
 1. Open another tab and browse to the [Microsoft Intune admin center](https://intune.microsoft.com/?ref=AdminCenter#home).
 
-1. From the left navigation pane, select **Endpoint security(1)**, under **Overview** section, select **Security Baselines (2)**.
+1. From the left navigation pane, select **Endpoint security (1)**, under **Overview** section, select **Security Baselines (2)**.
 
 1. On the **Endpoint security | Security baselines**, select **Security Baseline for Windows 10 and later (3)**.
 
