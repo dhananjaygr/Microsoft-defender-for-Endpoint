@@ -44,13 +44,13 @@ In this task, create Attack Surface Reduction rules to minimize vulnerabilities 
 
     ![Picture 1](../Media/createpolicy.png)
 
-1. On **Create a profile** page, under **Platform** select **Windows 10, Windows 11, and Windows Server (1)**, and in **Profile**, select **Attack surface reduction rules (2)**.
+1. On **Create a profile** page, under **Platform** select **Windows 10, Windows 11, and Windows Server (1)**, and in **Profile**, select **Attack surface reduction rules (2)**. Select **Create (3)**.
 
-    ![Picture 1](../Media/asr-mem-create-profile.png)
+    ![Picture 1](../Media/attackcreate.png)
 
-1. Select **Create**.
+1. In the Basics tab of the **Create profile** pane, in **Name (1)** add a name for your policy. In **Description** add a description for your ASR rules policy, and select **Next (2)**.
 
-1. In the Basics tab of the **Create profile** pane, in **Name** add a name for your policy. In **Description** add a description for your ASR rules policy, and select **Next**.
+    ![Picture 1](../Media/name.png)
 
 1. In the **Configuration settings** tab, under **Attack Surface Reduction Rules**, follow these instructions, and select **Next**:
 
@@ -79,9 +79,13 @@ In this task, create Attack Surface Reduction rules to minimize vulnerabilities 
 
     >**Note:** You can add tag information to specific devices. You can also use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Learn more: Use role-based access control (RBAC) and scope tags for distributed IT in Intune.
 
+    ![Picture 1](../Media/save.png)
+
 1. In the **Assignments** pane, you can deploy or "assign" the profile to your user or device groups. Under **Included groups** select **Add groups** and choose the **Sg-IT** group that you created in Lab-01, choose **Select**, and select **Next**.
 
 1. Now, review your settings in the **Review + Create** pane. Click **Create** to apply the rules.
+
+    ![Picture 1](../Media/create11.png)
 
 1. Your new attack surface reduction policy for ASR rules is listed in **Endpoint security | Attack surface reduction**.
 
@@ -93,15 +97,15 @@ In this task, configure policies across device groups to block specified categor
 
 1. Navigate to the [Microsoft Defender Portal](https://go.microsoft.com/fwlink/p/?linkid=2077139).
 
-1. In the navigation pane, select **Settings > Endpoints > General > Advanced Features**.
+1. In the navigation pane, select **Settings > Endpoints > General > Advanced Features (1)**.
 
-1. Scroll down until you see **Web content filtering**.
-
-1. Switch the toggle to **On**, and then select **Save preferences**.
+1. Scroll down until you see **Web content filtering**. Switch the toggle to **On (2)**, and then select **Save preferences (3)**.
 
     >**Note:** If it is On, the toggle button will not be visible to you; you can move on to the next step.
 
-1. Now navigate back to the [Microsoft Intune Admin Center](https://intune.microsoft.com/#home) page.
+    ![Picture 1](../Media/webcontent.png)
+
+1. Now, navigate back to the [Microsoft Intune Admin Center](https://intune.microsoft.com/#home) page.
 
 1. From the left navigation pane, select **Endpoint security (1)**. On the **Endpoint security | Overview** page, from the left navigation menu select **Antivirus (2)**.
 
@@ -113,7 +117,7 @@ In this task, configure policies across device groups to block specified categor
 
 1. On the **Create profile** page, give the name of your choice, and select **Next**.
 
-1. In **Configuration settings**, follow the instructions provided in the screenshots, and then select **Next (8)**.
+1. In **Configuration settings**, expand the **Defender** drop-down if needed, follow the instructions provided in the screenshots, and then select **Next (8)**.
 
     ![Picture 1](../Media/configurationsetting1.png)
 
@@ -196,7 +200,9 @@ In this task, configure policies across device groups to block specified categor
 
     ![Picture 1](../Media/addpolicy.png)
 
-1. On the **Web content filtering** page, you can see the policy you created. If it is not visible, refresh the page, and it will appear.
+1. On the **Web content filtering (1)** page, you can see the policy (2) you created. If it is not visible, refresh the page, and it will appear.
+
+    ![Picture 1](../Media/policy.png)
 
 ### Task 3: Testing Web Content Filtering Policy
 

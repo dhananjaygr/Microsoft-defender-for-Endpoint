@@ -114,7 +114,7 @@ The color of the Exposed devices graph changes as the trend changes. If the numb
 
     ![Picture 1](../Media/submit1.png)
  
-1. Now, close the **Attention required: vulnerabilities in Openssl** page.
+1. Now, close the remediation page.
 
 1. Now, from the left navigation, select **Remediation (1)**, under **Activities (2)**, you can view the status of your **remediation request (3)**.
 
@@ -152,23 +152,33 @@ Instead of running never-ending compliance scans, security baseline assessment h
 
 1. Select **+ Create** button.
 
-1. Enter a **Name** and **Description** for your security baselines profile and select **Next**.
+    ![Picture 1](../Media/create.png)
+    
+1. Enter a **Name (1)** and **Description** for your security baselines profile and select **Next (2)**.
 
-1. On the **Baseline profile scope** page set the profile settings as follows, and select **Next**:-
+    ![Picture 1](../Media/baselineprofile.png)
+
+1. On the **Baseline profile scope** page set the profile settings as follows, and select **Next (4)**:-
 
     |Settings|Value|
     |-------|------|
-    |Software|Microsoft Windows Server 2019|
-    |Benchmark| Select anyone from the CIS or STIG|
-    |Compliance level|Select one of your choice|
+    |Software|**Microsoft Windows Server 2022 (1)**|
+    |Benchmark| **Select anyone from the CIS or STIG (2)**|
+    |Compliance level|**Select one of your choice (3)**|
 
-1. On the **Add configuration settings** page, select the configurations you want to include in the profile.
+    ![Picture 1](../Media/baselinescope.png)
 
-1. Select **Next**. On the **Devices to assess** page, under **Device Groups** select **All device groups**.
+1. On the **Add configuration settings (1)** page, select the configurations you want to include in the profile. Select **Next (2)**. 
 
-1. Select **Next** to review the profile.
+    ![Picture 1](../Media/access.png)
 
-1. Select **Submit** to create your profile.
+1. On the **Devices to assess** page, under **Device Groups** select **All device groups (1)**. Select **Next (2)** to review the profile.
+
+    ![Picture 1](../Media/alldevicegroup.png)
+
+1. Select **Submit** to create your profile. Select **Done**.
+
+    ![Picture 1](../Media/submit11.png)
 
 1. On the final page, select **View profile page** to see the assessment results.
 

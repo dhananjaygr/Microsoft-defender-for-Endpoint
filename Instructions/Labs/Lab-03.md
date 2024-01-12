@@ -35,7 +35,9 @@ In this lab, you will perform the following:
 
 In this task, you will run two simulated attacks to explore the capabilities of Microsoft Defender for Endpoint.
 
-1. Open a new tab, and browse to the [Microsoft 365](https://www.office.com). 
+1. Open a new tab, and browse to the [Microsoft 365](https://www.office.com). On the **Microsoft 365** page, select **Sign in**
+
+    ![Picture 1](../Media/signin.png)
 
     >**Note:** If it shows you the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
@@ -61,13 +63,15 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. Select the **Tutorials (1)** tab.
 
-1. Under *Automated investigation (backdoor)* you will see a message describing the scenario. Below this paragraph, click **Read the walkthrough (2)**. A new browser tab opens which includes instructions to perform the simulation.
+1. Under **Automated investigation (backdoor)** you will see a message describing the scenario. Below this paragraph, click **Read the walkthrough (2)**. A new browser tab opens which includes instructions to perform the simulation.
 
    ![Picture 1](../Media/readthewalkthrough.png)
 
 1. In the new browser tab, locate the section named **Run the simulation** (page 5, starting at step 2) and follow the steps to run the attack. 
 
     > **Hint:** The simulation file *RS4_WinATP-Intro-Invoice.docm* can be found back in the Microsoft Defender portal, just below the **Read the walkthrough** you selected in the previous step by selecting the **Get simulation file** button. 
+
+    ![Picture 1](../Media/runthesimulation.png)
 
 1. After downloading the file, select **Open file**. It will open with **Microsoft Word** and enter the password as `WDATP!diy#`.
 
@@ -290,6 +294,10 @@ Take or undo remediation actions.
 1. On the **Device** page, select **More actions (...) (1)**, and select **Initiate Live Response Session (2)**.
 
     ![Picture 1](../Media/servervm.png)
+
+    >**Note:** If the **Initiate Live Response** option is not visible, then try signing out and signing back in to the Microsoft Defender portal. After signing back in to the Microsoft Defender portal re-perform steps-5 to 6.
+
+    ![Picture 1](../Media/odluser.png)
 
 1. When you initiate a live response session on a device, a dashboard opens. The dashboard provides information about the session such as the following:
 

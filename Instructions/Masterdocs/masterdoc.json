@@ -35,10 +35,6 @@
         {
           "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-defender-for-Endpoint/main/Instructions/Labs/Lab-06.md",
           "Order": 8
-        },
-        {
-          "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-defender-for-Endpoint/main/Instructions/Labs/Lab-07.md",
-          "Order": 9
         }
       ]
     }

@@ -31,11 +31,11 @@ In this lab, you will perform the following:
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
 
-1. Inside the Lab-VM, select **Type here to search**, type **Microsoft Edge (1)** and select it **(2)**.
+1. Inside the Lab-VM, double click on the  **Microsoft Edge** shortcut.
 
-    ![Picture 1](../Media/typeheretosearch.png)
+    ![Picture 1](../Media/edge.png)
 
-1. In the Edge browser, navigate to the [Microsoft Defender portal](https://security.microsoft.com).
+1. In the Edge browser, go to the [Microsoft Defender portal](https://security.microsoft.com).
 
 1. In the **Sign in** dialog box, copy and paste Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
