@@ -92,3 +92,4 @@ Based on your interests, you can use this lab guide as a reference to learn and 
 
 - Microsoft Defender for Endpoint
 - Microsoft Entra ID
+- Microsoft Intune admin center
