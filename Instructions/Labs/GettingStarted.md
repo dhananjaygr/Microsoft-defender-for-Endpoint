@@ -1,16 +1,34 @@
 # Getting Started with the Lab
-
-1. After the environment has been set up, your browser will load a virtual machine (JumpVM), use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the **Lab guide** to switch to different exercises in the lab guide.
-
-   ![](../Media/Lab-011.png)
  
-1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your registered email address. You can also open the Lab Guide in a separate and full window by selecting the **Split Window** from the lower right corner. 
+Welcome to your Microsoft Defender for Endpoint Workshop! We've prepared a seamless environment for you to familiarize yourself with the powerful capabilities of Microsoft Defender for Endpoint in safeguarding your organization against cyber threats. This hands-on workshop will guide you through exploring and understanding the advanced security features that Defender for Endpoint offers across diverse environments. Let's begin by making the most of this experience:
 
-    ![](../Media/intro-2.png)
+## Accessing Your Lab Environment
+ 
+Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-1. You can start, deallocate, and restart virtual machines from the **Resources** tab.
+![](../media/newversionlab-01.png)
 
-   ![](../Media/intro-3.png)
+### Virtual Machine & Lab Guide
+ 
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+
+## Exploring Your Lab Resources
+ 
+To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+
+![](../media/env.png)
+
+## Utilizing the Split Window Feature
+ 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+
+![](../media/splitwindow.png)
+
+## Managing Your Virtual Machine
+ 
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+
+![](../media/resources.png)
 
 1. Click **Next** from the bottom right corner to embark on your Lab journey!
  
