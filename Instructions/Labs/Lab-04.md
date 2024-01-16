@@ -11,6 +11,8 @@ Understanding how to navigate and interpret the dashboard for effective vulnerab
 
 - **Security Recommendations:** The lab guides participants in accessing and utilizing security recommendations within the Vulnerability Management Dashboard. Participants will learn how to prioritize and implement recommended security measures to address identified vulnerabilities.
 
+- **Security baselines assessment:** The Security Baselines Assessment provides a comprehensive evaluation of an organization's security measures, offering a detailed overview and analysis of its current security posture.
+
 ## Lab objectives
 
 In this lab, you will perform the following:
