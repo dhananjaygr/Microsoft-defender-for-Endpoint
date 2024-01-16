@@ -33,7 +33,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 1. Inside the Lab-VM, double click on the  **Microsoft Edge** shortcut.
 
-    ![Picture 1](../Media/edge.png)
+    ![Picture 1](../Media/edgeshortcut.png)
 
 1. In the Edge browser, go to the [Microsoft Defender portal](https://security.microsoft.com).
 
