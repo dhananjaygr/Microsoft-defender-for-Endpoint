@@ -27,6 +27,8 @@ In this lab, you will perform the following:
 - Task 1: Onboard Windows Client devices 
 - Task 2: Run a detection test
 
+## Estimated timing: 45 minutes
+
 ## Architecture Diagram
 
   ![Picture 1](../Media/Architecture-02.PNG)
