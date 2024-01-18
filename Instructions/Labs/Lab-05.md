@@ -242,7 +242,7 @@ In this task, implement Automatic Investigation and Response (AIR): Enhancing cy
     - In the Automation level list, select a level, such as **Full - remediate threats automatically**. The automation level determines whether remediation actions are taken automatically, or only upon approval. To learn more, see Automation levels in automated investigation and remediation, and select **Next**.
     - On the **Devices** category, under the **OS** status, choose the **Value** drop-down menu, and opt for **Windows Server 2019 (1)** from the available options. Select **Next (2)**.
 
-        ![Picture 1](../Media/devices1.png)
+        ![Picture 1](../Media/endpoint_2022server.png)
 
     - On **Preview devices** page, select **Show preview (1)**, and it will show the device which matches groups. Select **Next (2)**.
 
