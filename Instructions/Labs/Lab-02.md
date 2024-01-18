@@ -94,7 +94,7 @@ In this task, run the following PowerShell script on a newly onboarded device to
 
 1. Open the Microsoft Defender portal. In the left-hand menu, under the **Assets** area, select **Devices (1)**. You can see the device that is onboarded. If the device is not shown, complete the previous task and come back to check it later. It can take up to 60 minutes for the first device to be displayed in the portal.
 
-    ![Picture 1](../Media/select_lab6.png)
+    ![Picture 1](../Media/endpoint_2022server.png)
 
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
 
