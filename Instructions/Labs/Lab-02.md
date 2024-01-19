@@ -27,6 +27,8 @@ In this lab, you will perform the following:
 - Task 1: Onboard Windows Client devices 
 - Task 2: Run a detection test
 
+## Estimated timing: 45 minutes
+
 ## Architecture Diagram
 
   ![Picture 1](../Media/Architecture-02.PNG)
@@ -54,9 +56,9 @@ In this task, you will onboard Windows client devices to Microsoft Defender for 
 1. Under the *Downloads* pop-up, highlight the "**WindowsDefenderATPOnboardingPackage.zip**" file with your mouse and select the folder icon **Show in folder**. 
 
 
-    >**Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
+   >**Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
 
-    ![Picture 1](../Media/showinfolder.png)
+   ![Picture 1](../Media/showinfolder.png)
 
 1. Right-click the downloaded zip file and select **Extract All...**, make sure that **Show extracted files when complete** is checked and select **Extract**.
 
@@ -94,10 +96,16 @@ In this task, run the following PowerShell script on a newly onboarded device to
 
 1. Open the Microsoft Defender portal. In the left-hand menu, under the **Assets** area, select **Devices (1)**. You can see the device that is onboarded. If the device is not shown, complete the previous task and come back to check it later. It can take up to 60 minutes for the first device to be displayed in the portal.
 
-     ![Picture 1](../Media/![Picture 1](../Media/devicess.png).png)
+    ![Picture 1](../Media/endpoint_2022server.png)
 
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
 
+    >**Note:** Before, proceeding to next lab select **Settings** from the left menu bar, then from the settings page, select **Endpoints**, Select **Onboarding** under 
+     the Device Management section and make sure **First device onboarded is Completed**.
+    
+     ![Picture 1](../Media/endpoint_lab21.png)
+
+     
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 

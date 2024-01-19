@@ -21,6 +21,8 @@ In this lab, you will perform the following:
 - Task 1: Configure and launch a Drive-by URL attack  
 - Task 2: Validate the simulated Drive-by URL attack
 
+### Estimated timing: 45 minutes
+
 ## Architecture Diagram
 
   ![Picture 1](../Media/Architecture-06.PNG)
@@ -129,6 +131,10 @@ In this task, simulated attacks can help you identify and find vulnerable users 
 
 1. In the **Select the required text** pane that appears on the right, drag your cursor from the start of the code block to the end, so that the entire code block is highlighted. This will enable the **Select** button. Select this button. This returns you to the **Add indicator** pane. 
 
+	![Picture 1](../Media/select_lab6.png)
+
+	![Picture 1](../Media/add_indicator.png)
+
 1.  In the **Indicator Description** field, replace the default description with the following text: **Free gifts or other one-time only promotional giveaways**.
 
 1. Select inside the **Indicator Preview** area to see a preview of the indicator message. Then select outside the **Indicator Preview** field to exit the preview. 
@@ -151,7 +157,7 @@ In this task, simulated attacks can help you identify and find vulnerable users 
 
 1. On the **Target Users** page, verify the **Include only specific users and groups** option is selected (if not, select it now), and then select **+ Add Users**. 
 
-1. In the **Add Users** pane that appears, in the **Search for Users or Groups** field at the top of the pane, type **ODL_User <inject key="DeploymentID" enableCopy="false"></inject> (1)** and then hit Enter. In the list of users that appears select **ODL_User <inject key="DeploymentID" enableCopy="false"></inject> (2)** and then select **Add 1 User(s) (3)**.
+1. In the **Add Users** pane that appears, in the **Search for Users or Groups** field at the top of the pane, type **ODL_User(1)** and then hit Enter. In the list of users that appears select **ODL_User <inject key="DeploymentID" enableCopy="false"></inject> (2)** and then select **Add 1 User(s) (3)**.
 
 	![Picture 1](../Media/odl_user.png)
 

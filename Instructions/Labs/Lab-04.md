@@ -21,6 +21,8 @@ In this lab, you will perform the following:
 - Task 2: Security recommendations
 - Task 3: Security baselines assessment
 
+### Estimated timing: 45 minutes
+
 ## Architecture Diagram
 
 ![Picture 1](../Media/Architecture-04.444.PNG)

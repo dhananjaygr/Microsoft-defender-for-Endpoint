@@ -27,6 +27,8 @@ In this lab, you will perform the following:
 - Task 2: Investigate Incidents & Alerts (Actions)
 - Task 3: Live Responses
 
+## Estimated timing: 60 minutes
+
 ## Architecture Diagram
 
 ![Picture 1](../Media/arch-3.33.png)
@@ -71,7 +73,7 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
     > **Hint:** The simulation file *RS4_WinATP-Intro-Invoice.docm* can be found back in the Microsoft Defender portal, just below the **Read the walkthrough** you selected in the previous step by selecting the **Get simulation file** button. 
 
-    ![Picture 1](../Media/runthesimulation.png)
+   ![Picture 1](../Media/runthesimulation.png)
 
 1. After downloading the file, select **Open file**. It will open with **Microsoft Word** and enter the password as `WDATP!diy#`.
 
@@ -113,7 +115,7 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. From the left menu bar, choose **Incidents & Alerts (1)**, then click on **Alerts (2)** to view all generated alerts. You can select any of the alerts to check the details.
 
-    ![Picture 1](../Media/alerts.png)
+     ![Picture 1](../Media/alerts.png)
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -143,9 +145,9 @@ When you investigate an incident, you'll see:
 
     - Attack stories help you to quickly review, investigate, and remediate attacks while viewing the full story of the attack on the same tab. It also allows you to review the entity details and take remediation actions, such as deleting a file or isolating a device without losing context. Within the attack story you can find the alert page and the incident graph. The incident alert page has these sections:- Alert story, which includes: What happened, Actions taken, Related events, and Alert properties in the right pane (state, details, description, and others).
     
-        >**Note:** Note that not every alert will have all of the listed subsections in the Alert story section.
+   >**Note:** Note that not every alert will have all of the listed subsections in the Alert story section.
 
-        ![Picture 1](../Media/attackstory.png)
+    ![Picture 1](../Media/attackstory.png)
 
     - **Alert**:- 
 
@@ -156,12 +158,12 @@ When you investigate an incident, you'll see:
         - The source of the alerts (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Defender for Cloud Apps, and the app governance add-on).
         - The reason they were linked together.
 
-            ![Picture 1](../Media/alerts1.png)
+     ![Picture 1](../Media/alerts1.png)
 
-        - For example, By default, the alerts are ordered chronologically to allow you to see how the attack played out over time. When you select an alert within an incident, Microsoft Defender displays the alert information specific to the context of the overall incident.
+- For example, By default, the alerts are ordered chronologically to allow you to see how the attack played out over time. When you select an alert within an incident, Microsoft Defender displays the alert information specific to the context of the overall incident.
             - You can see the events of the alert, which other triggered alerts caused the current alert, and all the affected entities and activities involved in the attack, including devices, files, users, and mailboxes.
 
-                ![Picture 1](../Media/alerts2.png)
+     ![Picture 1](../Media/alerts2.png)
 
     - **Assets**:- 
 
@@ -169,27 +171,27 @@ When you investigate an incident, you'll see:
 
     - The Assets tab displays the total number of assets beside its name. A list of different categories with the number of assets within that category is presented when selecting the Assets tab.
 
-        ![Picture 1](../Media/assets.png)
+     ![Picture 1](../Media/assets.png)
 
-        - **Devices**:- 
+  - **Devices**:- 
 
-            - The **Devices** view lists all the devices related to the incident. Here's an example.
+    - The **Devices** view lists all the devices related to the incident. Here's an example.
                 
-                ![Picture 1](../Media/devices.png)
+     ![Picture 1](../Media/devices.png)
             
-                - Selecting a device from the list opens a bar that allows you to manage the selected device. You can quickly export, manage tags, initiate automated investigations, and more.
+  - Selecting a device from the list opens a bar that allows you to manage the selected device. You can quickly export, manage tags, initiate automated investigations, and more.
 
-                - Select the name of the device to see device details in the Defender for Endpoint device inventory. From the device page, you can gather additional information about the device, such as all of its alerts, a timeline, and security recommendations. For example, from the Timeline tab, you can scroll through the device timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised. Here's an example
+  - Select the name of the device to see device details in the Defender for Endpoint device inventory. From the device page, you can gather additional information about the device, such as all of its alerts, a timeline, and security recommendations. For example, from the Timeline tab, you can scroll through the device timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised. Here's an example
 
-                    ![Picture 1](../Media/device2.png)
+     ![Picture 1](../Media/device2.png)
 
-        >**Note:** Go back to the **Assets** tab page.
+    >**Note:** Go back to the **Assets** tab page.
         
-        - **Users**:- 
+    - **Users**:- 
             
-        - The Users view lists all the users that have been identified to be part of or related to the incident. Here's an example.
+    - The Users view lists all the users that have been identified to be part of or related to the incident. Here's an example.
 
-            ![Picture 1](../Media/users.png)
+      ![Picture 1](../Media/users.png)
 
         - You can select the check mark for a user to see details of the user account threat, exposure, and contact information. Select the user name to see additional user account details.
 
@@ -205,7 +207,7 @@ When you investigate an incident, you'll see:
 
     - The **Investigations** tab lists all the automated investigations triggered by alerts in this incident. Automated investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Defender for Endpoint and Defender for Office 365.
 
-        ![Picture 1](../Media/investigations.png)
+       ![Picture 1](../Media/investigations.png)
 
     - Select an investigation to navigate to its details page for full information on the investigation and remediation status.
 
@@ -229,17 +231,17 @@ When you investigate an incident, you'll see:
 
     - Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
 
-1. To continue the investigation, select the **Alerts** tab, and select any one alert. It will open detailed information about the alert.               
+4. To continue the investigation, select the **Alerts** tab, and select any one alert. It will open detailed information about the alert.               
 
-    ![Picture 1](../Media/alerts1.png)
+      ![Picture 1](../Media/alerts1.png)
 
-1. On the alert page, under **Alert story** select any item in the process tree to open the side pane, it contains details like execution and file details including the hash, size and signer. Scroll down to the side pane to understand the number of times this file has been seen worldwide and in the organization. 
+5. On the alert page, under **Alert story** select any item in the process tree to open the side pane, it contains details like execution and file details including the hash, size and signer. Scroll down to the side pane to understand the number of times this file has been seen worldwide and in the organization. 
 
-1. Select **Open file page**, to drill into it and continue with the investigation. The file page provides incredible details about an executable file. 
+6. Select **Open file page**, to drill into it and continue with the investigation. The file page provides incredible details about an executable file. 
 
-    ![Picture 1](../Media/alerts3.png)
+      ![Picture 1](../Media/alerts3.png)
 
-1. - The **Overview (1)** tab provides the same information as the file side pane did. 
+7. - The **Overview (1)** tab provides the same information as the file side pane did. 
 
     - The **Incidents & alerts (2)** tab goes on to show all the alerts associated with this file. 
 
@@ -249,13 +251,13 @@ When you investigate an incident, you'll see:
 
         >**Note:** If the file is malicious, select **Stop and Quarantine File**, it will display the pop-up of the **Stop and Quarantine File**, provide a comment and select **Confirm**.
 
-1. Once, you are satisfied that you have dealt with the incident addressed the alerts linked to it and taken all required remediation actions, the step is to resolve it. To do that, select **Manage incident**
+8. Once, you are satisfied that you have dealt with the incident addressed the alerts linked to it and taken all required remediation actions, the step is to resolve it. To do that, select **Manage incident**
 
-1. Navigate back to the **Incident** page, on the **Attack story** tab, select the alert which you were investigating, and select **Manage alert**.
+9. Navigate back to the **Incident** page, on the **Attack story** tab, select the alert which you were investigating, and select **Manage alert**.
 
-    ![Picture 1](../Media/managealert.png)
+      ![Picture 1](../Media/managealert.png)
 
-1. On the **Manage alert** page, follow these instructions: select **Save**, and then close the alert page.
+10. On the **Manage alert** page, follow these instructions: select **Save**, and then close the alert page.
     
     |**Settings**|**Value**|
     |------------|---------|
@@ -285,7 +287,7 @@ Take or undo remediation actions.
     |Live Response| **On (2)**|
     |Live Response for Servers|**On (3)**|
 
-    ![Picture 1](../Media/advancefeatures.png)
+     ![Picture 1](../Media/advancefeatures.png)
 
 1. From the left navigation menu, under **Assets**, select **Devices (1)**, and select the device (2) that you are using to generate the alerts and the incidents.
 
@@ -305,7 +307,7 @@ Take or undo remediation actions.
     - When the session started
     - The duration of the session
 
-        ![Picture 1](../Media/sessionID.png)
+     ![Picture 1](../Media/sessionID.png)
 
 1. Now run the following commands:
 
@@ -343,11 +345,11 @@ Take or undo remediation actions.
 
     1. On the top of the page select **Upload file to library**.
 
-        ![Picture 1](../Media/liveresponse.png)
+       ![Picture 1](../Media/liveresponse.png)
 
     2. Select **Upload file to library (1)**, selecṭ the **Malware script**, and any **Diagnostic script** **(2)** to upload. Select **Submit**.
 
-        ![Picture 1](../Media/uploadfile.png)
+       ![Picture 1](../Media/uploadfile.png)
 
     3. After uploading the script, run the following commands:
 
@@ -361,9 +363,9 @@ Take or undo remediation actions.
 
 1. View the console help to learn about command parameters. To learn about an individual command, run:
 
-    ```PowerShell
-    help <command name>
-    ```
+   ```PowerShell
+   help <command name>
+   ```
 
     >**Note:** Replace **commandname** with the command for which you need help. 
 
@@ -374,7 +376,7 @@ Take or undo remediation actions.
     - Duration
     - Status and input or output side bar 
 
-    ![Picture 1](../Media/commandlog.png)
+      ![Picture 1](../Media/commandlog.png)
 
 ## Review
 In this lab, you have completed the following:

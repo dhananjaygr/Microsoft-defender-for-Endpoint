@@ -23,6 +23,8 @@ In this lab, you will perform the following:
 - Task 3: Configure Device Groups
 - Task 4: Create Baseline Policies
 
+## Estimated timing: 60 minutes
+
 ## Architecture Diagram
 
   ![Picture 1](../Media/arch-1.1.png)
