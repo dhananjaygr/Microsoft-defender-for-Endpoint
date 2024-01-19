@@ -363,9 +363,9 @@ Take or undo remediation actions.
 
 1. View the console help to learn about command parameters. To learn about an individual command, run:
 
-        ```PowerShell
-        help <command name>
-        ```
+   ```PowerShell
+   help <command name>
+   ```
 
     >**Note:** Replace **commandname** with the command for which you need help. 
 
