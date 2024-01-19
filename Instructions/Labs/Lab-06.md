@@ -21,6 +21,8 @@ In this lab, you will perform the following:
 - Task 1: Configure and launch a Drive-by URL attack  
 - Task 2: Validate the simulated Drive-by URL attack
 
+### Estimated timing: 45 minutes
+
 ## Architecture Diagram
 
   ![Picture 1](../Media/Architecture-06.PNG)
