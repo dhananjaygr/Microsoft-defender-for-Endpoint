@@ -24,7 +24,9 @@ In this lab, you will perform the following:
 - Task 1: Create Attack Surface Reduction Rules  
 - Task 2: Configure Web Content Filtering 
 - Task 3: Testing Web Content Filtering Policy 
-- Task 4: Explore Automatic Investigation and response (AIR)  
+- Task 4: Explore Automatic Investigation and response (AIR)
+
+  ### Estimated timing: 60 minutes
 
 ## Architecture Diagram
 
