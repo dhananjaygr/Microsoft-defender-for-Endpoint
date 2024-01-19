@@ -13,8 +13,6 @@ Understanding how to navigate and interpret the dashboard for effective vulnerab
 
 - **Security baselines assessment:** The Security Baselines Assessment provides a comprehensive evaluation of an organization's security measures, offering a detailed overview and analysis of its current security posture.
 
-### Estimated timing: 45 minutes
-
 ## Lab objectives
 
 In this lab, you will perform the following:
@@ -22,6 +20,8 @@ In this lab, you will perform the following:
 - Task 1: Overview of Vulnerability Management dashboard
 - Task 2: Security recommendations
 - Task 3: Security baselines assessment
+
+### Estimated timing: 45 minutes
 
 ## Architecture Diagram
 
