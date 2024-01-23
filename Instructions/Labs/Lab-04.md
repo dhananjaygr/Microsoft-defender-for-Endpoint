@@ -68,6 +68,8 @@ In this task, you are required to provide a comprehensive overview of various as
 
 The color of the Exposed devices graph changes as the trend changes. If the number of exposed devices is on the rise, the color changes to red. If there's a decrease in the number of exposed devices, the color of the graph will change to green.
 
+>**Note:** If recommendations are not visible, wait for 2 hours for them to appear.
+
 >**Note:** Vulnerability management shows devices that were in use up to 30 days ago. This is different from the rest of Microsoft Defender for Endpoint, where if a device has not been in use for more than 7 days it has an 'Inactive' status.
 
 1. From the left navigation menu, under **Endpoints**, select the **Vulnerability management (1)** drop-down, and choose **Recommendations (2)**, this page contains a list of security recommendations for the threats and vulnerabilities found in the organization.
