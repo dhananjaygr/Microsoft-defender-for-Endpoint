@@ -35,7 +35,7 @@ In this lab, you will perform the following:
 
 ![Picture 1](../Media/arch-3.33.png)
 
-### Task 1: Create Incident and alerts
+### Task 1: Explore the Incident and Alerts
 
 In this task, you will run two simulated attacks to explore the capabilities of Microsoft Defender for Endpoint.
 
