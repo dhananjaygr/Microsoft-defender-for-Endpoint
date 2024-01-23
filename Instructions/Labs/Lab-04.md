@@ -189,6 +189,7 @@ Instead of running never-ending compliance scans, security baseline assessment h
 1. On the final page, select **View profile page** to see the assessment results.
 
     >**Note:** You can create multiple profiles for the same operating system with various customizations.
+    
     >**Note:** If the profiles are not visible, check again after 30 minutes or 1 hour.
 
 1. In the **Profiles** page, select the profile that you created to open a flyout with additional information. 
