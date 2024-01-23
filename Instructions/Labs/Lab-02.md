@@ -56,9 +56,9 @@ In this task, you will onboard Windows client devices to Microsoft Defender for 
 1. Under the *Downloads* pop-up, highlight the "**WindowsDefenderATPOnboardingPackage.zip**" file with your mouse and select the folder icon **Show in folder**. 
 
 
-   >**Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
+    >**Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
 
-   ![Picture 1](../Media/showinfolder.png)
+    ![Picture 1](../Media/showinfolder.png)
 
 1. Right-click the downloaded zip file and select **Extract All...**, make sure that **Show extracted files when complete** is checked and select **Extract**.
 
