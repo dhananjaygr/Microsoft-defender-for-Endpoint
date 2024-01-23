@@ -165,7 +165,9 @@ When you investigate an incident, you'll see:
 
     - **Investigations**:- 
 
-    - The **Investigations** tab lists all the automated investigations triggered by alerts in this incident. Automated investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Defender for Endpoint and Defender for Office 365.
+    - The **Investigations** tab lists all the automated investigations triggered by alerts in this incident. Automated investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Defender for Endpoint and Defender for Office 365
+
+    >**Note:** Investigations may not be visible or apparent.
 
        ![Picture 1](../Media/lab03-task02-investigations.png) 
 
