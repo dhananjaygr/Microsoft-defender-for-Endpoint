@@ -93,11 +93,11 @@ When you investigate an incident, you'll see:
 
 1. Navigate back to the **Incidents** page, by selecting **Incidents**, under **Incidents & alerts**.
 
-1. Select the new incident named "**Multi-stage incident involving Initial access & Persistence on one endpoint**" to load its details. This opens the main page for the incident where you'll find the full attack story information and tabs for alerts, devices, users, investigations, and evidence. 
+1. Select the new incident named "**Execution incident on one endpoint**" to load its details. This opens the main page for the incident where you'll find the full attack story information and tabs for alerts, devices, users, investigations, and evidence. 
 
     ![Picture 1](../Media/incident4.png) 
 
-    >**Note:** Select **Close** on the **Multi-stage incident involving Initial access & Persistence on one endpoint**.
+    >**Note:** Select **Close** on the **Execution incident on one endpoint**. 
 
 1. Here are the detailed information on the tabs:
 
