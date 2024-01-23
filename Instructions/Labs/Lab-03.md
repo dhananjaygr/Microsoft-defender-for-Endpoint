@@ -19,6 +19,8 @@ Participants will learn to leverage EDR capabilities to respond to incidents eff
 - **Live Responses:** The lab introduces participants to the concept of live responses for real-time remediation.
 Practical scenarios will be simulated where participants actively respond to ongoing security incidents.
 
+    >**Note:** Execute the Onboard Machines task as outlined in Lab 2, then proceed with the current lab.
+
 ## Lab objectives
 
 In this lab, you will perform the following:
@@ -59,59 +61,17 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
-1. From the menu, under **Endpoints**, select **Evaluation & tutorials (1)** and then select **Tutorials & simulations (2)** from the left side.
-
-   ![Picture 1](../Media/incident1.png)
-
-1. Select the **Tutorials (1)** tab.
-
-1. Under **Automated investigation (backdoor)** you will see a message describing the scenario. Below this paragraph, click **Read the walkthrough (2)**. A new browser tab opens which includes instructions to perform the simulation.
-
-   ![Picture 1](../Media/readthewalkthrough.png)
-
-1. In the new browser tab, locate the section named **Run the simulation** (page 5, starting at step 2) and follow the steps to run the attack. 
-
-    > **Hint:** The simulation file *RS4_WinATP-Intro-Invoice.docm* can be found back in the Microsoft Defender portal, just below the **Read the walkthrough** you selected in the previous step by selecting the **Get simulation file** button. 
-
-   ![Picture 1](../Media/runthesimulation.png)
-
-1. After downloading the file, select **Open file**. It will open with **Microsoft Word** and enter the password as `WDATP!diy#`.
-
-1. Select **Continue** to activate the word.
-
-1. On the **Activate office** pop-up, copy and paste the Username and password provided in the environment details page, and select **Next**. 
-
-1. On the **Stay signed in to all your apps**, select **No, sign in to this app only**.
-
-    ![Picture 1](../Media/staysigned.png)
-
-1. Select **Accept** on the **Accept the license agreement** page, and close the privacy matters page.
-
-1. Click **Enable Editing** if the document opens inProtectedView. If you see a subsequent security warning about macros being disabled. Close the Word file. 
-
-1. To unblock the document, navigate to its location in File Explorer. In File Explorer, right-click the document, and select Properties. In the General tab, check the **Unblock (1)** option under Security, and select **OK (2)**.   
-
-    ![Picture 1](../Media/unblock.png)
-
-1. Re-open the word file from the File Explorer and enter the password as `WDATP!diy#` after re-opening click on **Enable Content** and click on **OK**. 
-
-1. In the Command prompt pop-up press any key to close. 
-      
-    >**Note:** **Congrats – you’re done running the attack!** The attack simulation ends here. A real attacker, if successful, would likely continue to scan for information, send collected reconnaissance information to a command-and-control (C&C) server, and use this information to move laterally and pursue other attractive targets. Next, let’s review and investigate the Defender for Endpoint alerts that surfaced in the simulated attack.
-
-    >**Note:** Incidents and alerts should start to appear 15-30 minutes after the simulated backdoor is launched.
-
 1. Open the Microsoft 365 Defender portal select **Incidents & alerts** from the left menu bar, then select **Incidents**.
 
     ![Picture 1](../Media/incident3.png)
 
-1. Select the new incident named "**Multi-stage incident involving Initial access & Persistence on one endpoint**" to load its details.
+1. Select the new incident named "**Execution incident on one endpoint**" to load its details.
 
     ![Picture 1](../Media/incident4.png)
 
     >**Note:** If you are unable to see the incident, please wait for 15-30 minutes; it will appear.
 
-    >**Note:** Select **Close** on the **Multi-stage incident involving Initial access & Persistence on one endpoint**.
+    >**Note:** Select **Close** on the **Execution incident on one endpoint**.
 
 1. From the left menu bar, choose **Incidents & Alerts (1)**, then click on **Alerts (2)** to view all generated alerts. You can select any of the alerts to check the details.
 
