@@ -63,11 +63,11 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. Open the Microsoft 365 Defender portal select **Incidents & alerts** from the left menu bar, then select **Incidents**.
 
-    ![Picture 1](../Media/incident3.png)
+    ![Picture 1](../Media/lab03-task01-incidents.png)
 
 1. Select the new incident named "**Execution incident on one endpoint**" to load its details.
 
-    ![Picture 1](../Media/incident4.png)
+    ![Picture 1](../Media/lab03-task01-existingincidents.png)
 
     >**Note:** If you are unable to see the incident, please wait for 15-30 minutes; it will appear.
 
@@ -75,7 +75,7 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. From the left menu bar, choose **Incidents & Alerts (1)**, then click on **Alerts (2)** to view all generated alerts. You can select any of the alerts to check the details.
 
-     ![Picture 1](../Media/alerts.png)
+     ![Picture 1](../Media/lab03-task01-alerts.png)
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -95,7 +95,7 @@ When you investigate an incident, you'll see:
 
 1. Select the new incident named "**Execution incident on one endpoint**" to load its details. This opens the main page for the incident where you'll find the full attack story information and tabs for alerts, devices, users, investigations, and evidence. 
 
-    ![Picture 1](../Media/incident4.png) 
+    ![Picture 1](../Media/lab03-task01-existingincidents.png) 
 
     >**Note:** Select **Close** on the **Execution incident on one endpoint**. 
 
@@ -107,7 +107,7 @@ When you investigate an incident, you'll see:
     
    >**Note:** Note that not every alert will have all of the listed subsections in the Alert story section.
 
-    ![Picture 1](../Media/attackstory.png)
+    ![Picture 1](../Media/lab03-task02-attackstory.png)   
 
     - **Alert**:- 
 
@@ -118,12 +118,12 @@ When you investigate an incident, you'll see:
         - The source of the alerts (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Defender for Cloud Apps, and the app governance add-on).
         - The reason they were linked together.
 
-     ![Picture 1](../Media/alerts1.png)
+     ![Picture 1](../Media/lab03-task02-alerts.png)
 
 - For example, By default, the alerts are ordered chronologically to allow you to see how the attack played out over time. When you select an alert within an incident, Microsoft Defender displays the alert information specific to the context of the overall incident.
             - You can see the events of the alert, which other triggered alerts caused the current alert, and all the affected entities and activities involved in the attack, including devices, files, users, and mailboxes.
 
-     ![Picture 1](../Media/alerts2.png)
+     ![Picture 1](../Media/lab03-task02-alertsstory.png)  
 
     - **Assets**:- 
 
@@ -131,13 +131,13 @@ When you investigate an incident, you'll see:
 
     - The Assets tab displays the total number of assets beside its name. A list of different categories with the number of assets within that category is presented when selecting the Assets tab.
 
-     ![Picture 1](../Media/assets.png)
+     ![Picture 1](../Media/lab03-task02-asssts.png) 
 
   - **Devices**:- 
 
     - The **Devices** view lists all the devices related to the incident. Here's an example.
                 
-     ![Picture 1](../Media/devices.png)
+     ![Picture 1](../Media/lab03-task02-devices.png)
             
   - Selecting a device from the list opens a bar that allows you to manage the selected device. You can quickly export, manage tags, initiate automated investigations, and more.
 
@@ -151,7 +151,7 @@ When you investigate an incident, you'll see:
             
     - The Users view lists all the users that have been identified to be part of or related to the incident. Here's an example.
 
-      ![Picture 1](../Media/users.png)
+      ![Picture 1](../Media/lab03-task02-users.png) 
 
         - You can select the check mark for a user to see details of the user account threat, exposure, and contact information. Select the user name to see additional user account details.
 
@@ -167,7 +167,7 @@ When you investigate an incident, you'll see:
 
     - The **Investigations** tab lists all the automated investigations triggered by alerts in this incident. Automated investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Defender for Endpoint and Defender for Office 365.
 
-       ![Picture 1](../Media/investigations.png)
+       ![Picture 1](../Media/lab03-task02-investigations.png) 
 
     - Select an investigation to navigate to its details page for full information on the investigation and remediation status.
 
@@ -185,7 +185,7 @@ When you investigate an incident, you'll see:
 
     - The Evidence and Response tab shows all the supported events and suspicious entities in the alerts in the incident. Here's an example.
 
-        ![Picture 1](../Media/evidence.png)
+        ![Picture 1](../Media/lab03-task02-evidence.png)  
 
     - Microsoft Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
 
@@ -193,13 +193,13 @@ When you investigate an incident, you'll see:
 
 4. To continue the investigation, select the **Alerts** tab, and select any one alert. It will open detailed information about the alert.               
 
-      ![Picture 1](../Media/alerts1.png)
+      ![Picture 1](../Media/lab03-task02-alerts.png)  
 
 5. On the alert page, under **Alert story** select any item in the process tree to open the side pane, it contains details like execution and file details including the hash, size and signer. Scroll down to the side pane to understand the number of times this file has been seen worldwide and in the organization. 
 
 6. Select **Open file page**, to drill into it and continue with the investigation. The file page provides incredible details about an executable file. 
 
-      ![Picture 1](../Media/alerts3.png)
+      ![Picture 1](../Media/lab03-task02-filepage.png)
 
 7. - The **Overview (1)** tab provides the same information as the file side pane did. 
 
@@ -215,7 +215,7 @@ When you investigate an incident, you'll see:
 
 9. Navigate back to the **Incident** page, on the **Attack story** tab, select the alert which you were investigating, and select **Manage alert**.
 
-      ![Picture 1](../Media/managealert.png)
+      ![Picture 1](../Media/lab03-task02-manageincident.png)  
 
 10. On the **Manage alert** page, follow these instructions: select **Save**, and then close the alert page.
     
