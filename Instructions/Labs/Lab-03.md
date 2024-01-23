@@ -343,7 +343,7 @@ Take or undo remediation actions.
 ## Review
 In this lab, you have completed the following:
 
-- Created Incidents and alerts
+- Explored the Incident and Alerts
 - Investigated Incidents & Alerts
 - Explored the Live Responses
 
