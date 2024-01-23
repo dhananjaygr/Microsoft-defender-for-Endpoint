@@ -25,7 +25,7 @@ Practical scenarios will be simulated where participants actively respond to ong
 
 In this lab, you will perform the following:
 
-- Task 1: Create Incident and alerts
+- Task 1: Explore the Incident and Alerts
 - Task 2: Investigate Incidents & Alerts (Actions)
 - Task 3: Live Responses
 
